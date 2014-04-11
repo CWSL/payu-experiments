@@ -1,9 +1,9 @@
 # PBS configuration
 queue: normal
 project: v45
-walltime: 0:30:00
-jobname: cnyf2
-ncpus: 128
+walltime: 1:00:00
+jobname: core2_nyf_1440x1080
+ncpus: 1168
 
 shortpath: /short/v45
 
@@ -13,29 +13,30 @@ submodels:
     atmosphere:
         model: matm
         exe: matm_nt62.exe
-        input: cnyf2_matm
+        input: core2_nyf_matm
         ncpus: 1
 
     ocean:
         model: mom
         exe: fms_ACCESS-OM.x
-        input: cnyf2_mom
-        ncpus: 120
+        input: mom_1440x1080
+        ncpus: 960
         build:
-            repository: https://github.com/nicholash/mom.git
-            tag: mom-80-auscom
             command: 'cd exp && ./MOM_compile.csh --platform nci --type ACCESS-OM'
             exec_path: exec/nci/ACCESS-OM/
 
     ice:
         model: cice
-        exe: cice_6p.exe
-        input: cnyf2_cice
-        ncpus: 6
+        exe: cice_192p.exe
+        input: cice_1440x1080
+        ncpus: 192
+        build:
+            command: 'make access-hom'
+            exec_path: build_192p
 
     coupler:
         model: oasis
-        input: cnyf2_oasis
+        input: oasis_1440x1080
         ncpus: 0
 
 # Misc
