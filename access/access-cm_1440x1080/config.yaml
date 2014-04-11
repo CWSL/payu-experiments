@@ -1,0 +1,43 @@
+# PBS configuration
+queue: normal
+project: v45
+walltime: 1:00:00
+jobname: core2_nyf_1440x1080
+ncpus: 1168
+
+shortpath: /short/v45
+
+# Model configuration
+model: access
+submodels:
+    atmosphere:
+        model: um
+        exe: um7.3.exe
+        input: um
+        ncpus: 1
+
+    ocean:
+        model: mom
+        exe: fms_ACCESS-OM.x
+        input: mom_1440x1080
+        ncpus: 960
+        build:
+            command: 'cd exp && ./MOM_compile.csh --platform nci --type ACCESS-OM'
+            exec_path: exec/nci/ACCESS-OM/
+
+    ice:
+        model: cice
+        exe: cice_192p.exe
+        input: cice
+        ncpus: 192
+        build:
+            command: 'make access-hom'
+            exec_path: build_192p
+
+    coupler:
+        model: oasis
+        input: oasis_1440x1080
+        ncpus: 0
+
+# Misc
+stacksize: unlimited
