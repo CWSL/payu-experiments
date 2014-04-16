@@ -1,6 +1,6 @@
 &coupling
-    init_date = '00010101'
-    inidate = '00010101'
+    init_date = 00010101
+    inidate = 00010101
     truntime0 = 0
     runtime = 2678400
     dt_cpl = 21600

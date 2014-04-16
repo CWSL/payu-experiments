@@ -1,7 +1,7 @@
 # PBS configuration
 queue: normal
 project: v45
-walltime: 1:00:00
+walltime: 5:00:00
 jobname: core2_nyf_1440x1080
 ncpus: 1168
 
@@ -22,6 +22,7 @@ submodels:
         input: mom_1440x1080
         ncpus: 960
         build:
+            repository: https://github.com/nicholash/mom.git
             command: 'cd exp && ./MOM_compile.csh --platform nci --type ACCESS-OM'
             exec_path: exec/nci/ACCESS-OM/
 
@@ -41,3 +42,4 @@ submodels:
 
 # Misc
 stacksize: unlimited
+mpirun: --mca orte_base_help_aggregate 0 -mca mtl ^mxm

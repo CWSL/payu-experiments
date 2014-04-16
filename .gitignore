@@ -1,1 +1,4 @@
 pbs_logs/
+*.err
+*.out
+work/
