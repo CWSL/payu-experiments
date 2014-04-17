@@ -2,7 +2,7 @@
 queue: normal
 project: v45
 walltime: 0:30:00
-jobname: core2_nyf
+jobname: access-cm
 ncpus: 144
 
 shortpath: /short/v45
@@ -12,7 +12,7 @@ model: access
 submodels:
     atmosphere:
         model: um
-        exe: um7.3.exe
+        exe: um7.3x
         input: um
         ncpus: 96
 
@@ -38,3 +38,4 @@ submodels:
 
 # Misc
 stacksize: unlimited
+mpirun: --mca orte_base_help_aggregate 0 -mca mtl ^mxm
