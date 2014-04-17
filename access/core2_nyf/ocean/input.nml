@@ -416,17 +416,7 @@
       thickness_sigma_min  = 100.0
 /
 
- &ocean_solo_nml
-            years = 0
-            months = 0
-            days   = 10
-            date_init = 0001,01,01,0,0,0
-            hours = 0
-            minutes = 0
-            seconds = 0
-            calendar = 'NOLEAP'
-            dt_cpld  = 1800
-/
+
 
  &ocean_sponges_tracer_nml
       use_this_module=.false.
@@ -628,24 +618,37 @@
       send_before_ocean_update=.false.
       send_after_ocean_update=.true.
 /
+
 &auscom_ice_nml
-dt_cpl=1800
-do_ice_once=.false.
-pop_icediag=.true.
-kmxice=5 
-fixmeltT=.false.
-Tmelt=-.216
-use_ioaice=.true.
-aice_cutoff=0.15
-icemlt_factor=1.0
-frazil_factor=1.0 
-iceform_adj_salt=.false.
-sign_stflx=1.0
-chk_i2o_fields=.false.
-chk_o2i_fields=.false.
+    dt_cpl=1800
+    do_ice_once=.false.
+    pop_icediag=.true.
+    kmxice=5 
+    fixmeltT=.false.
+    Tmelt=-.216
+    use_ioaice=.true.
+    aice_cutoff=0.15
+    icemlt_factor=1.0
+    frazil_factor=1.0 
+    iceform_adj_salt=.false.
+    sign_stflx=1.0
+    chk_i2o_fields=.false.
+    chk_o2i_fields=.false.
+/
+
+&ocean_solo_nml
+    years = 1
+    months = 0
+    days   = 0
+    date_init = 0001,01,01,0,0,0
+    hours = 0
+    minutes = 0
+    seconds = 0
+    calendar = 'NOLEAP'
+    dt_cpld  = 1800
 /
 
 &bg_diff_lat_dependence_nml
-lat_low_bgdiff=20.
-bg_diff_eq=1.0e-6
+    lat_low_bgdiff=20.
+    bg_diff_eq=1.0e-6
 /
