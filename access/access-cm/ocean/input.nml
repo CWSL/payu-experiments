@@ -632,17 +632,9 @@
  icemlt_factor=1.0
  frazil_factor=1.0
  iceform_adj_salt=.false.
- wfi_factor=1
- wfo_adj=0
  sign_stflx=1.0
- redsea_gulfbay_sfix=.true.
  chk_i2o_fields=.false.
  chk_o2i_fields=.false.
- sfix_hours=24
- irs2=325
- ire2=328
- igs=328
- ige=341
 /
 
 &bg_diff_lat_dependence_nml

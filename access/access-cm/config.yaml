@@ -37,7 +37,7 @@ submodels:
 
     coupler:
         model: oasis
-        input: oasis
+        input: oasis_cm
         ncpus: 0
 
 # Misc
