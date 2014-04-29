@@ -2,7 +2,7 @@
 queue: normal
 project: v45
 walltime: 1:00:00
-jobname: core2_nyf_1440x1080
+jobname: access-cm_1440x1080
 ncpus: 1168
 
 shortpath: /short/v45
@@ -12,26 +12,28 @@ model: access
 submodels:
     atmosphere:
         model: um
-        exe: um7.3.exe
+        exe: um7.3x
         input: um
-        ncpus: 1
+        ncpus: 96
 
     ocean:
         model: mom
-        exe: fms_ACCESS-OM.x
+        exe: fms_ACCESS-CM.x
         input: mom_1440x1080
         ncpus: 960
         build:
-            command: 'cd exp && ./MOM_compile.csh --platform nci --type ACCESS-OM'
-            exec_path: exec/nci/ACCESS-OM/
+            repository: https://github.com/nicholash/mom.git
+            tag: mom-86-access-new
+            command: 'cd exp && ./MOM_compile.csh --platform nci --type ACCESS-CM'
+            exec_path: exec/nci/ACCESS-CM/
 
     ice:
         model: cice
-        exe: cice_192p.exe
-        input: cice
+        exe: cice_access-cm_1440x1080_192p.exe
+        input: cice_1440x1080
         ncpus: 192
         build:
-            command: 'make access-hom'
+            command: 'make access-hcm'
             exec_path: build_192p
 
     coupler:
@@ -41,3 +43,4 @@ submodels:
 
 # Misc
 stacksize: unlimited
+mpirun: --mca orte_base_help_aggregate 0 -mca mtl ^mxm
