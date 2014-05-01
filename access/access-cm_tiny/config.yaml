@@ -3,7 +3,7 @@ queue: express
 project: v45
 walltime: 0:10:00
 jobname: access-cm_tiny
-ncpus: 128
+ncpus: 64
 
 shortpath: /short/v45
 
@@ -14,13 +14,13 @@ submodels:
         model: um
         exe: um7.3x
         input: um
-        ncpus: 96
+        ncpus: 32
 
     ocean:
         model: mom
         exe: fms_ACCESS-CM.x
         input: mom
-        ncpus: 20
+        ncpus: 16
         build:
             repository: https://github.com/nicholash/mom.git
             tag: mom-86-access-new
