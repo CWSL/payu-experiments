@@ -3,7 +3,7 @@ queue: normal
 project: v45
 walltime: 1:00:00
 jobname: access-cm_1440x1080
-ncpus: 1168
+ncpus: 1248
 
 shortpath: /short/v45
 
