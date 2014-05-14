@@ -13,13 +13,13 @@ submodels:
     atmosphere:
         model: um
         exe: um7.3x
-        input: um
+        input: /home/599/nah599/v45/access/input/um
         ncpus: 32
 
     ocean:
         model: mom
         exe: fms_ACCESS-CM.x
-        input: mom
+        input: /home/599/nah599/v45/access/input/mom
         ncpus: 16
         build:
             repository: https://github.com/nicholash/mom.git
@@ -31,14 +31,14 @@ submodels:
     ice:
         model: cice
         exe: cice_access-cm_360x300_6p.exe
-        input: cice
+        input: /home/599/nah599/v45/access/input/cice
         ncpus: 6
         build:
             command: 'make access-cm'
 
     coupler:
         model: oasis
-        input: oasis_cm
+        input: /home/599/nah599/v45/access/input/oasis_cm
         ncpus: 0
 
 # Misc

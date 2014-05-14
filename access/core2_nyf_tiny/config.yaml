@@ -13,13 +13,13 @@ submodels:
     atmosphere:
         model: matm
         exe: matm_nt62.exe
-        input: core2_nyf_matm
+        input: /home/599/nah599/v45/access/input/core2_nyf_matm
         ncpus: 1
 
     ocean:
         model: mom
         exe: fms_ACCESS-OM.x
-        input: mom
+        input: /home/599/nah599/v45/access/input/mom
         ncpus: 120
         build:
             repository: https://github.com/nicholash/mom.git
@@ -29,12 +29,12 @@ submodels:
     ice:
         model: cice
         exe: cice_6p.exe
-        input: cice
+        input: /home/599/nah599/v45/access/input/cice
         ncpus: 6
 
     coupler:
         model: oasis
-        input: oasis
+        input: /home/599/nah599/v45/access/input/oasis
         ncpus: 0
 
 # Misc
