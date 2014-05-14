@@ -408,7 +408,8 @@
 /
 
  &ocean_solo_nml
-            months = 3
+            years = 1
+            months = 0
             days   = 0
             date_init = 0001,01,01,0,0,0
             hours = 0
