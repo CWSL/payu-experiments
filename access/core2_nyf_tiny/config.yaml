@@ -28,13 +28,13 @@ submodels:
 
     ice:
         model: cice
-        exe: cice_6p.exe
+        exe: cice_access-om_360x300_6p.exe
         input: /home/599/nah599/v45/access/input/cice
         ncpus: 6
 
     coupler:
         model: oasis
-        input: /home/599/nah599/v45/access/input/oasis
+        input: /home/599/nah599/v45/access/input/oasis_om
         ncpus: 0
 
 # Misc
