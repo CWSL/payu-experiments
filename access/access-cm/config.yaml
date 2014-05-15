@@ -1,7 +1,7 @@
 # PBS configuration
 queue: normal
 project: v45
-walltime: 2:00:00
+walltime: 5:00:00
 jobname: access-cm
 ncpus: 144
 
@@ -22,8 +22,6 @@ submodels:
         input: mom
         ncpus: 40
         build:
-            repository: https://github.com/nicholash/mom.git
-            tag: mom-86-access-new
             path_to_build_command: exp
             command: './MOM_compile.csh --platform nci --type ACCESS-CM'
             exec_path: exec/nci/ACCESS-CM/

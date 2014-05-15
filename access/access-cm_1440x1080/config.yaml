@@ -19,7 +19,7 @@ submodels:
     ocean:
         model: mom
         exe: fms_ACCESS-CM.x
-        input: mom_1440x1080
+        input: mom_cm_1440x1080
         ncpus: 960
         build:
             repository: https://github.com/nicholash/mom.git
@@ -31,7 +31,7 @@ submodels:
     ice:
         model: cice
         exe: cice_access-cm_1440x1080_192p.exe
-        input: cice_1440x1080
+        input: cice_cm_1440x1080
         ncpus: 192
         build:
             command: 'make access-hcm'
@@ -39,7 +39,7 @@ submodels:
 
     coupler:
         model: oasis
-        input: oasis_1440x1080
+        input: oasis_cm_1440x1080
         ncpus: 0
 
 # Misc
