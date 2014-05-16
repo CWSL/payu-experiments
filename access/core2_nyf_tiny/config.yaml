@@ -22,8 +22,8 @@ submodels:
         input: /home/599/nah599/v45/access/input/mom
         ncpus: 120
         build:
-            repository: https://github.com/nicholash/mom.git
-            command: 'cd exp && ./MOM_compile.csh --platform nci --type ACCESS-OM'
+            path_to_build_command: exp
+            command: './MOM_compile.csh --platform nci --type ACCESS-OM'
             exec_path: exec/nci/ACCESS-OM/
 
     ice:
