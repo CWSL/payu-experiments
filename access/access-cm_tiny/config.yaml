@@ -22,8 +22,6 @@ submodels:
         input: /home/599/nah599/v45/access/input/mom
         ncpus: 16
         build:
-            repository: https://github.com/nicholash/mom.git
-            tag: mom-86-access-new
             path_to_build_command: exp
             command: './MOM_compile.csh --platform nci --type ACCESS-CM'
             exec_path: exec/nci/ACCESS-CM/
