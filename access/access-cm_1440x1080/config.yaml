@@ -22,8 +22,6 @@ submodels:
         input: mom_cm_1440x1080
         ncpus: 960
         build:
-            repository: https://github.com/nicholash/mom.git
-            tag: mom-86-access-new
             path_to_build_command: exp
             command: './MOM_compile.csh --platform nci --type ACCESS-CM'
             exec_path: exec/nci/ACCESS-CM/
@@ -41,6 +39,12 @@ submodels:
         model: oasis
         input: oasis_cm_1440x1080
         ncpus: 0
+
+calendar:
+    runtime:
+        years: 0
+        months: 6
+        days: 0 
 
 # Misc
 stacksize: unlimited
