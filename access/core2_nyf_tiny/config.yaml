@@ -3,7 +3,7 @@ queue: normal
 project: v45
 walltime: 04:00:00
 jobname: core2_nyf
-ncpus: 128
+ncpus: 64
 
 shortpath: /short/v45
 
@@ -20,7 +20,7 @@ submodels:
         model: mom
         exe: fms_ACCESS-OM.x
         input: /home/599/nah599/v45/access/input/mom
-        ncpus: 120
+        ncpus: 54
         build:
             path_to_build_command: exp
             command: './MOM_compile.csh --platform nci --type ACCESS-OM'
@@ -36,6 +36,17 @@ submodels:
         model: oasis
         input: /home/599/nah599/v45/access/input/oasis_om
         ncpus: 0
+
+calendar:
+    runtime:
+        years: 0
+        months: 0
+        days: 1
+
+    start:
+        year: 1
+        month: 1
+        days: 1
 
 # Misc
 stacksize: unlimited
