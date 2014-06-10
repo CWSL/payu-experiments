@@ -204,7 +204,7 @@
 /
 
  &ocean_model_nml
-      layout = ,
+      layout = 9,6
       time_tendency='twolevel'
       vertical_coordinate='zstar'
       dt_ocean = 1800
@@ -640,7 +640,7 @@
     years = 0
     months = 0
     days   = 1
-    date_init = 0001,01,01,0,0,0
+    date_init = 1, 1, 1, 0, 0, 0
     hours = 0
     minutes = 0
     seconds = 0
