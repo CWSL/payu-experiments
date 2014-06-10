@@ -39,6 +39,18 @@ submodels:
         input: /home/599/nah599/v45/access/input/oasis_cm
         ncpus: 0
 
+calendar:
+    runtime:
+        years: 0
+        months: 0
+        days: 10
+
+    start:
+        year: 1
+        month: 1
+        days: 1
+
+
 # Misc
 stacksize: unlimited
 mpirun: --mca orte_base_help_aggregate 0 -mca mtl ^mxm
