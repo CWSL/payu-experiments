@@ -40,6 +40,13 @@ submodels:
         input: oasis_om_1440x1080
         ncpus: 0
 
+
+calendar:
+    runtime:
+        years: 0
+        months: 6
+        days: 0 
+
 # Misc
 stacksize: unlimited
 mpirun: --mca orte_base_help_aggregate 0 -mca mtl ^mxm
