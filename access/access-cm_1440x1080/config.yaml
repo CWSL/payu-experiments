@@ -1,11 +1,12 @@
 # PBS configuration
 queue: normal
-project: v45
+project: x77
 walltime: 5:00:00
 jobname: access-cm_1440x1080
 ncpus: 1248
 
 shortpath: /short/v45
+outputpath: /short/v45/nah599/access/archive/access-cm_1440x1080
 
 # Model configuration
 model: access
@@ -48,5 +49,5 @@ calendar:
 
 # Misc
 stacksize: unlimited
-mpirun: --mca orte_base_help_aggregate 0 -mca mtl ^mxm
-collate_mem: 6GB
+mpirun: --mca orte_base_help_aggregate 0 --mca mtl ^mxm --mca coll ^fca
+collate_mem: 16GB
