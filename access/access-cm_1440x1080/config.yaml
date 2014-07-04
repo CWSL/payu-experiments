@@ -6,7 +6,6 @@ jobname: access-cm_1440x1080
 ncpus: 1248
 
 shortpath: /short/v45
-outputpath: /short/v45/nah599/access/archive/access-cm_1440x1080
 
 # Model configuration
 model: access
