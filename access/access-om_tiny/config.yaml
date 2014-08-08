@@ -1,8 +1,8 @@
 # PBS configuration
 queue: normal
 project: v45
-walltime: 04:00:00
-jobname: core2_nyf
+walltime: 00:10:00
+jobname: access-om_tiny
 ncpus: 64
 
 shortpath: /short/v45
@@ -52,4 +52,4 @@ calendar:
 
 # Misc
 stacksize: unlimited
-mpirun: --mca orte_base_help_aggregate 0 -mca mtl ^mxm
+mpirun: --mca orte_base_help_aggregate 0
