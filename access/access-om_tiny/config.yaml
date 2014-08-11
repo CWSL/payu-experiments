@@ -13,13 +13,13 @@ submodels:
     atmosphere:
         model: matm
         exe: matm_nt62.exe
-        input: /home/599/nah599/v45/access/input/core2_nyf_matm
+        input: core2_nyf_matm
         ncpus: 1
 
     ocean:
         model: mom
         exe: fms_ACCESS-OM.x
-        input: /home/599/nah599/v45/access/input/mom
+        input: mom
         ncpus: 54
         build:
             path_to_build_command: exp
@@ -29,14 +29,14 @@ submodels:
     ice:
         model: cice
         exe: cice_access-om_360x300_6p.exe
-        input: /home/599/nah599/v45/access/input/cice
+        input: cice
         ncpus: 6
         build:
             command: 'make access-om'
 
     coupler:
         model: oasis
-        input: /home/599/nah599/v45/access/input/oasis_om
+        input: oasis_om
         ncpus: 0
 
 calendar:
