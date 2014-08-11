@@ -1,7 +1,7 @@
 # PBS configuration
 queue: normal
 project: v45
-walltime: 5:00:00
+walltime: 1:00:00
 jobname: access-cm
 ncpus: 144
 
@@ -38,6 +38,18 @@ submodels:
         model: oasis
         input: oasis_cm
         ncpus: 0
+
+calendar:
+    runtime:
+        years: 0
+        months: 1
+        days: 0
+
+    start:
+        year: 1
+        month: 1
+        days: 1
+
 
 # Misc
 stacksize: unlimited
