@@ -32,6 +32,7 @@ submodels:
         input: cice
         ncpus: 6
         build:
+            exec_path: build_access-cm_360x300_6p
             command: 'make access-cm'
 
     coupler:

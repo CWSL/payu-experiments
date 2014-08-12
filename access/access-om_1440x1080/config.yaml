@@ -33,7 +33,7 @@ submodels:
         ncpus: 192
         build:
             command: 'make access-hom'
-            exec_path: build_192p
+            exec_path: build_access-om_1440x1080_192p
 
     coupler:
         model: oasis

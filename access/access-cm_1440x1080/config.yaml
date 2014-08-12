@@ -1,6 +1,6 @@
 # PBS configuration
 queue: normal
-project: x77
+project: v45
 walltime: 5:00:00
 jobname: access-cm_1440x1080
 ncpus: 1248
@@ -32,8 +32,8 @@ submodels:
         input: cice_cm_1440x1080
         ncpus: 192
         build:
+            exec_path: build_access-cm_1440x1080_192p
             command: 'make access-hcm'
-            exec_path: build_192p
 
     coupler:
         model: oasis
@@ -48,5 +48,5 @@ calendar:
 
 # Misc
 stacksize: unlimited
-mpirun: --mca orte_base_help_aggregate 0 --mca mtl ^mxm --mca coll ^fca
+mpirun: --mca orte_base_help_aggregate 0 --mca mtl ^mxm
 collate_mem: 16GB
