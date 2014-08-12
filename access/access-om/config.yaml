@@ -23,7 +23,7 @@ submodels:
         ncpus: 120
         build:
             repository: https://github.com/nicholash/mom.git
-            command: 'cd exp && ./MOM_compile.csh --platform nci --type ACCESS-OM'
+            command: './MOM_compile.csh --platform nci --type ACCESS-OM'
             exec_path: exec/nci/ACCESS-OM/
 
     ice:
