@@ -28,7 +28,7 @@ submodels:
 
     ice:
         model: cice
-        exe: cice_6p.exe
+        exe: cice_access-om_360x300_6p.exe
         input: cice
         ncpus: 6
 
