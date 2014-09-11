@@ -1,7 +1,7 @@
 # PBS configuration
 queue: express
 project: v45
-walltime: 0:10:00
+walltime: 0:30:00
 jobname: access-cm_tiny
 ncpus: 64
 
