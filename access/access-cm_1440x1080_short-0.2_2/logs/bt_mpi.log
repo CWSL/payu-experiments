@@ -1,0 +1,858 @@
+===============================================================================
+node r649
+-------------------------------------------------------------------------------
+proc 15179
+[Thread debugging using libthread_db enabled]
+0x00002b7c1fc8d308 in poll () from /lib64/libc.so.6
+#0  0x00002b7c1fc8d308 in poll () from /lib64/libc.so.6
+#1  0x00002b7c1ea49d18 in poll_dispatch (base=0x23445d0, arg=0x23280d0, tv=<value optimized out>) at poll.c:167
+#2  0x00002b7c1ea491ea in opal_event_base_loop (base=0x23445d0, flags=<value optimized out>) at event.c:838
+#3  0x00002b7c1ea0efc8 in orte_daemon (argc=24, argv=0x7fff85f13d28) at orted/orted_main.c:846
+#4  0x0000000000400906 in main (argc=24, argv=0x7fff85f13d28) at orted.c:62
+===============================================================================
+node r620
+-------------------------------------------------------------------------------
+proc 10992
+[Thread debugging using libthread_db enabled]
+0x00002ba8d6995308 in poll () from /lib64/libc.so.6
+#0  0x00002ba8d6995308 in poll () from /lib64/libc.so.6
+#1  0x00002ba8d5751d18 in poll_dispatch (base=0x22545d0, arg=0x22380d0, tv=<value optimized out>) at poll.c:167
+#2  0x00002ba8d57511ea in opal_event_base_loop (base=0x22545d0, flags=<value optimized out>) at event.c:838
+#3  0x00002ba8d5716fc8 in orte_daemon (argc=24, argv=0x7fff6b1f2a58) at orted/orted_main.c:846
+#4  0x0000000000400906 in main (argc=24, argv=0x7fff6b1f2a58) at orted.c:62
+===============================================================================
+node r584
+-------------------------------------------------------------------------------
+proc 16189
+[Thread debugging using libthread_db enabled]
+0x00002aea99e5f308 in poll () from /lib64/libc.so.6
+#0  0x00002aea99e5f308 in poll () from /lib64/libc.so.6
+#1  0x00002aea98c1bd18 in poll_dispatch (base=0x1c455d0, arg=0x1c290d0, tv=<value optimized out>) at poll.c:167
+#2  0x00002aea98c1b1ea in opal_event_base_loop (base=0x1c455d0, flags=<value optimized out>) at event.c:838
+#3  0x00002aea98be0fc8 in orte_daemon (argc=24, argv=0x7fffdec93338) at orted/orted_main.c:846
+#4  0x0000000000400906 in main (argc=24, argv=0x7fffdec93338) at orted.c:62
+===============================================================================
+node r626
+-------------------------------------------------------------------------------
+proc 31063
+[Thread debugging using libthread_db enabled]
+0x00002afe05322308 in poll () from /lib64/libc.so.6
+#0  0x00002afe05322308 in poll () from /lib64/libc.so.6
+#1  0x00002afe040ded18 in poll_dispatch (base=0x182a5d0, arg=0x180e0d0, tv=<value optimized out>) at poll.c:167
+#2  0x00002afe040de1ea in opal_event_base_loop (base=0x182a5d0, flags=<value optimized out>) at event.c:838
+#3  0x00002afe040a3fc8 in orte_daemon (argc=24, argv=0x7fff60021488) at orted/orted_main.c:846
+#4  0x0000000000400906 in main (argc=24, argv=0x7fff60021488) at orted.c:62
+===============================================================================
+node r582
+-------------------------------------------------------------------------------
+proc 17764
+[Thread debugging using libthread_db enabled]
+0x00002ac9b1bde308 in poll () from /lib64/libc.so.6
+#0  0x00002ac9b1bde308 in poll () from /lib64/libc.so.6
+#1  0x00002ac9b099ad18 in poll_dispatch (base=0x7cc5d0, arg=0x7b00d0, tv=<value optimized out>) at poll.c:167
+#2  0x00002ac9b099a1ea in opal_event_base_loop (base=0x7cc5d0, flags=<value optimized out>) at event.c:838
+#3  0x00002ac9b095ffc8 in orte_daemon (argc=24, argv=0x7fffd77b8668) at orted/orted_main.c:846
+#4  0x0000000000400906 in main (argc=24, argv=0x7fffd77b8668) at orted.c:62
+===============================================================================
+node r916
+-------------------------------------------------------------------------------
+proc 20953
+[Thread debugging using libthread_db enabled]
+0x00002ad7e6ed2308 in poll () from /lib64/libc.so.6
+#0  0x00002ad7e6ed2308 in poll () from /lib64/libc.so.6
+#1  0x00002ad7e5c8ed18 in poll_dispatch (base=0x232c5d0, arg=0x23100d0, tv=<value optimized out>) at poll.c:167
+#2  0x00002ad7e5c8e1ea in opal_event_base_loop (base=0x232c5d0, flags=<value optimized out>) at event.c:838
+#3  0x00002ad7e5c53fc8 in orte_daemon (argc=24, argv=0x7fff4a730058) at orted/orted_main.c:846
+#4  0x0000000000400906 in main (argc=24, argv=0x7fff4a730058) at orted.c:62
+===============================================================================
+node r625
+-------------------------------------------------------------------------------
+proc 4528
+[Thread debugging using libthread_db enabled]
+0x00002b94a4ec6308 in poll () from /lib64/libc.so.6
+#0  0x00002b94a4ec6308 in poll () from /lib64/libc.so.6
+#1  0x00002b94a3c82d18 in poll_dispatch (base=0x98d5d0, arg=0x9710d0, tv=<value optimized out>) at poll.c:167
+#2  0x00002b94a3c821ea in opal_event_base_loop (base=0x98d5d0, flags=<value optimized out>) at event.c:838
+#3  0x00002b94a3c47fc8 in orte_daemon (argc=24, argv=0x7fff8ca8a9d8) at orted/orted_main.c:846
+#4  0x0000000000400906 in main (argc=24, argv=0x7fff8ca8a9d8) at orted.c:62
+===============================================================================
+node r641
+-------------------------------------------------------------------------------
+proc 14882
+[Thread debugging using libthread_db enabled]
+0x00002b54effee308 in poll () from /lib64/libc.so.6
+#0  0x00002b54effee308 in poll () from /lib64/libc.so.6
+#1  0x00002b54eedaad18 in poll_dispatch (base=0x12315d0, arg=0x12150d0, tv=<value optimized out>) at poll.c:167
+#2  0x00002b54eedaa1ea in opal_event_base_loop (base=0x12315d0, flags=<value optimized out>) at event.c:838
+#3  0x00002b54eed6ffc8 in orte_daemon (argc=24, argv=0x7ffffdcd51a8) at orted/orted_main.c:846
+#4  0x0000000000400906 in main (argc=24, argv=0x7ffffdcd51a8) at orted.c:62
+===============================================================================
+node r642
+-------------------------------------------------------------------------------
+proc 14322
+[Thread debugging using libthread_db enabled]
+0x00002b16119f6308 in poll () from /lib64/libc.so.6
+#0  0x00002b16119f6308 in poll () from /lib64/libc.so.6
+#1  0x00002b16107b2d18 in poll_dispatch (base=0x132f5d0, arg=0x13130d0, tv=<value optimized out>) at poll.c:167
+#2  0x00002b16107b21ea in opal_event_base_loop (base=0x132f5d0, flags=<value optimized out>) at event.c:838
+#3  0x00002b1610777fc8 in orte_daemon (argc=24, argv=0x7fff7b7e4bc8) at orted/orted_main.c:846
+#4  0x0000000000400906 in main (argc=24, argv=0x7fff7b7e4bc8) at orted.c:62
+===============================================================================
+node r901
+-------------------------------------------------------------------------------
+proc 24191
+[Thread debugging using libthread_db enabled]
+0x00002b87a5aa2308 in poll () from /lib64/libc.so.6
+#0  0x00002b87a5aa2308 in poll () from /lib64/libc.so.6
+#1  0x00002b87a485ed18 in poll_dispatch (base=0x6275d0, arg=0x60b0d0, tv=<value optimized out>) at poll.c:167
+#2  0x00002b87a485e1ea in opal_event_base_loop (base=0x6275d0, flags=<value optimized out>) at event.c:838
+#3  0x00002b87a4823fc8 in orte_daemon (argc=24, argv=0x7fff858c3578) at orted/orted_main.c:846
+#4  0x0000000000400906 in main (argc=24, argv=0x7fff858c3578) at orted.c:62
+===============================================================================
+node r931
+-------------------------------------------------------------------------------
+proc 27322
+[Thread debugging using libthread_db enabled]
+0x00002b7b3938e308 in poll () from /lib64/libc.so.6
+#0  0x00002b7b3938e308 in poll () from /lib64/libc.so.6
+#1  0x00002b7b3814ad18 in poll_dispatch (base=0x166d5d0, arg=0x16510d0, tv=<value optimized out>) at poll.c:167
+#2  0x00002b7b3814a1ea in opal_event_base_loop (base=0x166d5d0, flags=<value optimized out>) at event.c:838
+#3  0x00002b7b3810ffc8 in orte_daemon (argc=24, argv=0x7fffc86ede58) at orted/orted_main.c:846
+#4  0x0000000000400906 in main (argc=24, argv=0x7fffc86ede58) at orted.c:62
+===============================================================================
+node r1571
+-------------------------------------------------------------------------------
+proc 32269
+[Thread debugging using libthread_db enabled]
+0x00002b5a2435e308 in poll () from /lib64/libc.so.6
+#0  0x00002b5a2435e308 in poll () from /lib64/libc.so.6
+#1  0x00002b5a2311ad18 in poll_dispatch (base=0x12355d0, arg=0x12190d0, tv=<value optimized out>) at poll.c:167
+#2  0x00002b5a2311a1ea in opal_event_base_loop (base=0x12355d0, flags=<value optimized out>) at event.c:838
+#3  0x00002b5a230dffc8 in orte_daemon (argc=24, argv=0x7fffebae0a78) at orted/orted_main.c:846
+#4  0x0000000000400906 in main (argc=24, argv=0x7fffebae0a78) at orted.c:62
+===============================================================================
+node r1572
+-------------------------------------------------------------------------------
+proc 28855
+[Thread debugging using libthread_db enabled]
+0x00002b1c89474308 in poll () from /lib64/libc.so.6
+#0  0x00002b1c89474308 in poll () from /lib64/libc.so.6
+#1  0x00002b1c88230d18 in poll_dispatch (base=0x72d5d0, arg=0x7110d0, tv=<value optimized out>) at poll.c:167
+#2  0x00002b1c882301ea in opal_event_base_loop (base=0x72d5d0, flags=<value optimized out>) at event.c:838
+#3  0x00002b1c881f5fc8 in orte_daemon (argc=24, argv=0x7fffcac6b148) at orted/orted_main.c:846
+#4  0x0000000000400906 in main (argc=24, argv=0x7fffcac6b148) at orted.c:62
+===============================================================================
+node r913
+-------------------------------------------------------------------------------
+proc 20660
+[Thread debugging using libthread_db enabled]
+0x00002ab3b8b02308 in poll () from /lib64/libc.so.6
+#0  0x00002ab3b8b02308 in poll () from /lib64/libc.so.6
+#1  0x00002ab3b78bed18 in poll_dispatch (base=0x15425d0, arg=0x15260d0, tv=<value optimized out>) at poll.c:167
+#2  0x00002ab3b78be1ea in opal_event_base_loop (base=0x15425d0, flags=<value optimized out>) at event.c:838
+#3  0x00002ab3b7883fc8 in orte_daemon (argc=24, argv=0x7fff2c60bf98) at orted/orted_main.c:846
+#4  0x0000000000400906 in main (argc=24, argv=0x7fff2c60bf98) at orted.c:62
+===============================================================================
+node r1574
+-------------------------------------------------------------------------------
+proc 25392
+[Thread debugging using libthread_db enabled]
+0x00002aefa1e54308 in poll () from /lib64/libc.so.6
+#0  0x00002aefa1e54308 in poll () from /lib64/libc.so.6
+#1  0x00002aefa0c10d18 in poll_dispatch (base=0x22d25d0, arg=0x22b60d0, tv=<value optimized out>) at poll.c:167
+#2  0x00002aefa0c101ea in opal_event_base_loop (base=0x22d25d0, flags=<value optimized out>) at event.c:838
+#3  0x00002aefa0bd5fc8 in orte_daemon (argc=24, argv=0x7fffb1032fc8) at orted/orted_main.c:846
+#4  0x0000000000400906 in main (argc=24, argv=0x7fffb1032fc8) at orted.c:62
+===============================================================================
+node r1577
+-------------------------------------------------------------------------------
+proc 25661
+[Thread debugging using libthread_db enabled]
+0x00002ac2fb6e7308 in poll () from /lib64/libc.so.6
+#0  0x00002ac2fb6e7308 in poll () from /lib64/libc.so.6
+#1  0x00002ac2fa4a3d18 in poll_dispatch (base=0x18395d0, arg=0x181d0d0, tv=<value optimized out>) at poll.c:167
+#2  0x00002ac2fa4a31ea in opal_event_base_loop (base=0x18395d0, flags=<value optimized out>) at event.c:838
+#3  0x00002ac2fa468fc8 in orte_daemon (argc=24, argv=0x7fffeb859bf8) at orted/orted_main.c:846
+#4  0x0000000000400906 in main (argc=24, argv=0x7fffeb859bf8) at orted.c:62
+===============================================================================
+node r1578
+-------------------------------------------------------------------------------
+proc 26102
+[Thread debugging using libthread_db enabled]
+0x00002b736c9b9308 in poll () from /lib64/libc.so.6
+#0  0x00002b736c9b9308 in poll () from /lib64/libc.so.6
+#1  0x00002b736b775d18 in poll_dispatch (base=0x21045d0, arg=0x20e80d0, tv=<value optimized out>) at poll.c:167
+#2  0x00002b736b7751ea in opal_event_base_loop (base=0x21045d0, flags=<value optimized out>) at event.c:838
+#3  0x00002b736b73afc8 in orte_daemon (argc=24, argv=0x7fff911a1928) at orted/orted_main.c:846
+#4  0x0000000000400906 in main (argc=24, argv=0x7fff911a1928) at orted.c:62
+===============================================================================
+node r914
+-------------------------------------------------------------------------------
+proc 18542
+[Thread debugging using libthread_db enabled]
+0x00002ab90fc8f308 in poll () from /lib64/libc.so.6
+#0  0x00002ab90fc8f308 in poll () from /lib64/libc.so.6
+#1  0x00002ab90ea4bd18 in poll_dispatch (base=0x197a5d0, arg=0x195e0d0, tv=<value optimized out>) at poll.c:167
+#2  0x00002ab90ea4b1ea in opal_event_base_loop (base=0x197a5d0, flags=<value optimized out>) at event.c:838
+#3  0x00002ab90ea10fc8 in orte_daemon (argc=24, argv=0x7fff2cd6c0c8) at orted/orted_main.c:846
+#4  0x0000000000400906 in main (argc=24, argv=0x7fff2cd6c0c8) at orted.c:62
+===============================================================================
+node r1329
+-------------------------------------------------------------------------------
+proc 18071
+[Thread debugging using libthread_db enabled]
+0x00002b959c298308 in poll () from /lib64/libc.so.6
+#0  0x00002b959c298308 in poll () from /lib64/libc.so.6
+#1  0x00002b959b054d18 in poll_dispatch (base=0x21ec5d0, arg=0x21d00d0, tv=<value optimized out>) at poll.c:167
+#2  0x00002b959b0541ea in opal_event_base_loop (base=0x21ec5d0, flags=<value optimized out>) at event.c:838
+#3  0x00002b959b019fc8 in orte_daemon (argc=24, argv=0x7fff3d734228) at orted/orted_main.c:846
+#4  0x0000000000400906 in main (argc=24, argv=0x7fff3d734228) at orted.c:62
+===============================================================================
+node r1557
+-------------------------------------------------------------------------------
+proc 24352
+[Thread debugging using libthread_db enabled]
+0x00002b16ad4bf308 in poll () from /lib64/libc.so.6
+#0  0x00002b16ad4bf308 in poll () from /lib64/libc.so.6
+#1  0x00002b16ac27bd18 in poll_dispatch (base=0xbf65d0, arg=0xbda0d0, tv=<value optimized out>) at poll.c:167
+#2  0x00002b16ac27b1ea in opal_event_base_loop (base=0xbf65d0, flags=<value optimized out>) at event.c:838
+#3  0x00002b16ac240fc8 in orte_daemon (argc=24, argv=0x7fff65523ea8) at orted/orted_main.c:846
+#4  0x0000000000400906 in main (argc=24, argv=0x7fff65523ea8) at orted.c:62
+===============================================================================
+node r915
+-------------------------------------------------------------------------------
+proc 21526
+[Thread debugging using libthread_db enabled]
+0x00002b75bb80f308 in poll () from /lib64/libc.so.6
+#0  0x00002b75bb80f308 in poll () from /lib64/libc.so.6
+#1  0x00002b75ba5cbd18 in poll_dispatch (base=0x1aa55d0, arg=0x1a890d0, tv=<value optimized out>) at poll.c:167
+#2  0x00002b75ba5cb1ea in opal_event_base_loop (base=0x1aa55d0, flags=<value optimized out>) at event.c:838
+#3  0x00002b75ba590fc8 in orte_daemon (argc=24, argv=0x7fffe430fe18) at orted/orted_main.c:846
+#4  0x0000000000400906 in main (argc=24, argv=0x7fffe430fe18) at orted.c:62
+===============================================================================
+node r1548
+-------------------------------------------------------------------------------
+proc 15041
+[Thread debugging using libthread_db enabled]
+0x00002ae4d071b308 in poll () from /lib64/libc.so.6
+#0  0x00002ae4d071b308 in poll () from /lib64/libc.so.6
+#1  0x00002ae4cf4d7d18 in poll_dispatch (base=0x1e415d0, arg=0x1e250d0, tv=<value optimized out>) at poll.c:167
+#2  0x00002ae4cf4d71ea in opal_event_base_loop (base=0x1e415d0, flags=<value optimized out>) at event.c:838
+#3  0x00002ae4cf49cfc8 in orte_daemon (argc=24, argv=0x7fff99b67668) at orted/orted_main.c:846
+#4  0x0000000000400906 in main (argc=24, argv=0x7fff99b67668) at orted.c:62
+===============================================================================
+node r1558
+-------------------------------------------------------------------------------
+proc 22452
+[Thread debugging using libthread_db enabled]
+0x00002b63d21a6308 in poll () from /lib64/libc.so.6
+#0  0x00002b63d21a6308 in poll () from /lib64/libc.so.6
+#1  0x00002b63d0f62d18 in poll_dispatch (base=0x23fb5d0, arg=0x23df0d0, tv=<value optimized out>) at poll.c:167
+#2  0x00002b63d0f621ea in opal_event_base_loop (base=0x23fb5d0, flags=<value optimized out>) at event.c:838
+#3  0x00002b63d0f27fc8 in orte_daemon (argc=24, argv=0x7fff398493b8) at orted/orted_main.c:846
+#4  0x0000000000400906 in main (argc=24, argv=0x7fff398493b8) at orted.c:62
+===============================================================================
+node r333
+-------------------------------------------------------------------------------
+proc 16752
+[Thread debugging using libthread_db enabled]
+0x00002b5fa86ae308 in poll () from /lib64/libc.so.6
+#0  0x00002b5fa86ae308 in poll () from /lib64/libc.so.6
+#1  0x00002b5fa746ad18 in poll_dispatch (base=0xaaa5d0, arg=0xa8e0d0, tv=<value optimized out>) at poll.c:167
+#2  0x00002b5fa746a1ea in opal_event_base_loop (base=0xaaa5d0, flags=<value optimized out>) at event.c:838
+#3  0x00002b5fa742ffc8 in orte_daemon (argc=24, argv=0x7fff8f477a08) at orted/orted_main.c:846
+#4  0x0000000000400906 in main (argc=24, argv=0x7fff8f477a08) at orted.c:62
+===============================================================================
+node r217
+-------------------------------------------------------------------------------
+proc 3424
+[Thread debugging using libthread_db enabled]
+0x00002b7f2f975308 in poll () from /lib64/libc.so.6
+#0  0x00002b7f2f975308 in poll () from /lib64/libc.so.6
+#1  0x00002b7f2e731d18 in poll_dispatch (base=0xb825d0, arg=0xb660d0, tv=<value optimized out>) at poll.c:167
+#2  0x00002b7f2e7311ea in opal_event_base_loop (base=0xb825d0, flags=<value optimized out>) at event.c:838
+#3  0x00002b7f2e6f6fc8 in orte_daemon (argc=24, argv=0x7fff4fad4138) at orted/orted_main.c:846
+#4  0x0000000000400906 in main (argc=24, argv=0x7fff4fad4138) at orted.c:62
+===============================================================================
+node r1534
+-------------------------------------------------------------------------------
+proc 31988
+[Thread debugging using libthread_db enabled]
+0x00002ac8e91e7308 in poll () from /lib64/libc.so.6
+#0  0x00002ac8e91e7308 in poll () from /lib64/libc.so.6
+#1  0x00002ac8e7fa3d18 in poll_dispatch (base=0x16555d0, arg=0x16390d0, tv=<value optimized out>) at poll.c:167
+#2  0x00002ac8e7fa31ea in opal_event_base_loop (base=0x16555d0, flags=<value optimized out>) at event.c:838
+#3  0x00002ac8e7f68fc8 in orte_daemon (argc=24, argv=0x7fffcf34dc88) at orted/orted_main.c:846
+#4  0x0000000000400906 in main (argc=24, argv=0x7fffcf34dc88) at orted.c:62
+===============================================================================
+node r1535
+-------------------------------------------------------------------------------
+proc 3630
+[Thread debugging using libthread_db enabled]
+0x00002b4ab06ea308 in poll () from /lib64/libc.so.6
+#0  0x00002b4ab06ea308 in poll () from /lib64/libc.so.6
+#1  0x00002b4aaf4a6d18 in poll_dispatch (base=0xb345d0, arg=0xb180d0, tv=<value optimized out>) at poll.c:167
+#2  0x00002b4aaf4a61ea in opal_event_base_loop (base=0xb345d0, flags=<value optimized out>) at event.c:838
+#3  0x00002b4aaf46bfc8 in orte_daemon (argc=24, argv=0x7fff656ec438) at orted/orted_main.c:846
+#4  0x0000000000400906 in main (argc=24, argv=0x7fff656ec438) at orted.c:62
+===============================================================================
+node r233
+-------------------------------------------------------------------------------
+proc 19125
+[Thread debugging using libthread_db enabled]
+0x00002aabfc97b308 in poll () from /lib64/libc.so.6
+#0  0x00002aabfc97b308 in poll () from /lib64/libc.so.6
+#1  0x00002aabfb737d18 in poll_dispatch (base=0x24c35d0, arg=0x24a70d0, tv=<value optimized out>) at poll.c:167
+#2  0x00002aabfb7371ea in opal_event_base_loop (base=0x24c35d0, flags=<value optimized out>) at event.c:838
+#3  0x00002aabfb6fcfc8 in orte_daemon (argc=24, argv=0x7fff85a21808) at orted/orted_main.c:846
+#4  0x0000000000400906 in main (argc=24, argv=0x7fff85a21808) at orted.c:62
+===============================================================================
+node r1528
+-------------------------------------------------------------------------------
+proc 18398
+[Thread debugging using libthread_db enabled]
+0x00002b40ce99b308 in poll () from /lib64/libc.so.6
+#0  0x00002b40ce99b308 in poll () from /lib64/libc.so.6
+#1  0x00002b40cd757d18 in poll_dispatch (base=0x23365d0, arg=0x231a0d0, tv=<value optimized out>) at poll.c:167
+#2  0x00002b40cd7571ea in opal_event_base_loop (base=0x23365d0, flags=<value optimized out>) at event.c:838
+#3  0x00002b40cd71cfc8 in orte_daemon (argc=24, argv=0x7fff55ae5908) at orted/orted_main.c:846
+#4  0x0000000000400906 in main (argc=24, argv=0x7fff55ae5908) at orted.c:62
+===============================================================================
+node r235
+-------------------------------------------------------------------------------
+proc 18132
+[Thread debugging using libthread_db enabled]
+0x00002aeebd5b4308 in poll () from /lib64/libc.so.6
+#0  0x00002aeebd5b4308 in poll () from /lib64/libc.so.6
+#1  0x00002aeebc370d18 in poll_dispatch (base=0x1ee55d0, arg=0x1ec90d0, tv=<value optimized out>) at poll.c:167
+#2  0x00002aeebc3701ea in opal_event_base_loop (base=0x1ee55d0, flags=<value optimized out>) at event.c:838
+#3  0x00002aeebc335fc8 in orte_daemon (argc=24, argv=0x7fff1c6fd788) at orted/orted_main.c:846
+#4  0x0000000000400906 in main (argc=24, argv=0x7fff1c6fd788) at orted.c:62
+===============================================================================
+node r234
+-------------------------------------------------------------------------------
+proc 413
+[Thread debugging using libthread_db enabled]
+0x00002ae2d1337308 in poll () from /lib64/libc.so.6
+#0  0x00002ae2d1337308 in poll () from /lib64/libc.so.6
+#1  0x00002ae2d00f3d18 in poll_dispatch (base=0x10c55d0, arg=0x10a90d0, tv=<value optimized out>) at poll.c:167
+#2  0x00002ae2d00f31ea in opal_event_base_loop (base=0x10c55d0, flags=<value optimized out>) at event.c:838
+#3  0x00002ae2d00b8fc8 in orte_daemon (argc=24, argv=0x7fffaeee12a8) at orted/orted_main.c:846
+#4  0x0000000000400906 in main (argc=24, argv=0x7fffaeee12a8) at orted.c:62
+===============================================================================
+node r237
+-------------------------------------------------------------------------------
+proc 11545
+[Thread debugging using libthread_db enabled]
+0x00002b1e5e803308 in poll () from /lib64/libc.so.6
+#0  0x00002b1e5e803308 in poll () from /lib64/libc.so.6
+#1  0x00002b1e5d5bfd18 in poll_dispatch (base=0xde35d0, arg=0xdc70d0, tv=<value optimized out>) at poll.c:167
+#2  0x00002b1e5d5bf1ea in opal_event_base_loop (base=0xde35d0, flags=<value optimized out>) at event.c:838
+#3  0x00002b1e5d584fc8 in orte_daemon (argc=24, argv=0x7fff080565a8) at orted/orted_main.c:846
+#4  0x0000000000400906 in main (argc=24, argv=0x7fff080565a8) at orted.c:62
+===============================================================================
+node r1533
+-------------------------------------------------------------------------------
+proc 26617
+[Thread debugging using libthread_db enabled]
+0x00002afca3997308 in poll () from /lib64/libc.so.6
+#0  0x00002afca3997308 in poll () from /lib64/libc.so.6
+#1  0x00002afca2753d18 in poll_dispatch (base=0x16245d0, arg=0x16080d0, tv=<value optimized out>) at poll.c:167
+#2  0x00002afca27531ea in opal_event_base_loop (base=0x16245d0, flags=<value optimized out>) at event.c:838
+#3  0x00002afca2718fc8 in orte_daemon (argc=24, argv=0x7fff4b15ddc8) at orted/orted_main.c:846
+#4  0x0000000000400906 in main (argc=24, argv=0x7fff4b15ddc8) at orted.c:62
+===============================================================================
+node r1543
+-------------------------------------------------------------------------------
+proc 842
+[Thread debugging using libthread_db enabled]
+0x00002b7ec4f1f308 in poll () from /lib64/libc.so.6
+#0  0x00002b7ec4f1f308 in poll () from /lib64/libc.so.6
+#1  0x00002b7ec3cdbd18 in poll_dispatch (base=0x16365d0, arg=0x161a0d0, tv=<value optimized out>) at poll.c:167
+#2  0x00002b7ec3cdb1ea in opal_event_base_loop (base=0x16365d0, flags=<value optimized out>) at event.c:838
+#3  0x00002b7ec3ca0fc8 in orte_daemon (argc=24, argv=0x7fff8b135248) at orted/orted_main.c:846
+#4  0x0000000000400906 in main (argc=24, argv=0x7fff8b135248) at orted.c:62
+===============================================================================
+node r98
+-------------------------------------------------------------------------------
+proc 21160
+[Thread debugging using libthread_db enabled]
+0x00002b674ab52308 in poll () from /lib64/libc.so.6
+#0  0x00002b674ab52308 in poll () from /lib64/libc.so.6
+#1  0x00002b674990ed18 in poll_dispatch (base=0x1a595e0, arg=0x1a59c10, tv=<value optimized out>) at poll.c:167
+#2  0x00002b674990e1ea in opal_event_base_loop (base=0x1a595e0, flags=<value optimized out>) at event.c:838
+#3  0x0000000000404720 in orterun (argc=24, argv=0x7fff095ca708) at orterun.c:936
+#4  0x00000000004035e4 in main (argc=24, argv=0x7fff095ca708) at main.c:13
+===============================================================================
+node r912
+-------------------------------------------------------------------------------
+proc 19600
+[Thread debugging using libthread_db enabled]
+0x00002ac303e1a308 in poll () from /lib64/libc.so.6
+#0  0x00002ac303e1a308 in poll () from /lib64/libc.so.6
+#1  0x00002ac302bd6d18 in poll_dispatch (base=0x1b195d0, arg=0x1afd0d0, tv=<value optimized out>) at poll.c:167
+#2  0x00002ac302bd61ea in opal_event_base_loop (base=0x1b195d0, flags=<value optimized out>) at event.c:838
+#3  0x00002ac302b9bfc8 in orte_daemon (argc=24, argv=0x7fff643f6738) at orted/orted_main.c:846
+#4  0x0000000000400906 in main (argc=24, argv=0x7fff643f6738) at orted.c:62
+===============================================================================
+node r1549
+-------------------------------------------------------------------------------
+proc 14360
+[Thread debugging using libthread_db enabled]
+0x00002ae54fd88308 in poll () from /lib64/libc.so.6
+#0  0x00002ae54fd88308 in poll () from /lib64/libc.so.6
+#1  0x00002ae54eb44d18 in poll_dispatch (base=0x220b5d0, arg=0x21ef0d0, tv=<value optimized out>) at poll.c:167
+#2  0x00002ae54eb441ea in opal_event_base_loop (base=0x220b5d0, flags=<value optimized out>) at event.c:838
+#3  0x00002ae54eb09fc8 in orte_daemon (argc=24, argv=0x7ffffa016d78) at orted/orted_main.c:846
+#4  0x0000000000400906 in main (argc=24, argv=0x7ffffa016d78) at orted.c:62
+===============================================================================
+node r615
+-------------------------------------------------------------------------------
+proc 19666
+[Thread debugging using libthread_db enabled]
+0x00002b2d6d179308 in poll () from /lib64/libc.so.6
+#0  0x00002b2d6d179308 in poll () from /lib64/libc.so.6
+#1  0x00002b2d6bf35d18 in poll_dispatch (base=0x25fd5d0, arg=0x25e10d0, tv=<value optimized out>) at poll.c:167
+#2  0x00002b2d6bf351ea in opal_event_base_loop (base=0x25fd5d0, flags=<value optimized out>) at event.c:838
+#3  0x00002b2d6befafc8 in orte_daemon (argc=24, argv=0x7fff506bbce8) at orted/orted_main.c:846
+#4  0x0000000000400906 in main (argc=24, argv=0x7fff506bbce8) at orted.c:62
+===============================================================================
+node r1550
+-------------------------------------------------------------------------------
+proc 993
+[Thread debugging using libthread_db enabled]
+0x00002b34c8a8d308 in poll () from /lib64/libc.so.6
+#0  0x00002b34c8a8d308 in poll () from /lib64/libc.so.6
+#1  0x00002b34c7849d18 in poll_dispatch (base=0x11da5d0, arg=0x11be0d0, tv=<value optimized out>) at poll.c:167
+#2  0x00002b34c78491ea in opal_event_base_loop (base=0x11da5d0, flags=<value optimized out>) at event.c:838
+#3  0x00002b34c780efc8 in orte_daemon (argc=24, argv=0x7fff7f3d8558) at orted/orted_main.c:846
+#4  0x0000000000400906 in main (argc=24, argv=0x7fff7f3d8558) at orted.c:62
+===============================================================================
+node r639
+-------------------------------------------------------------------------------
+proc 13927
+[Thread debugging using libthread_db enabled]
+0x00002b929569f308 in poll () from /lib64/libc.so.6
+#0  0x00002b929569f308 in poll () from /lib64/libc.so.6
+#1  0x00002b929445bd18 in poll_dispatch (base=0xf055d0, arg=0xee90d0, tv=<value optimized out>) at poll.c:167
+#2  0x00002b929445b1ea in opal_event_base_loop (base=0xf055d0, flags=<value optimized out>) at event.c:838
+#3  0x00002b9294420fc8 in orte_daemon (argc=24, argv=0x7fff0e5b2698) at orted/orted_main.c:846
+#4  0x0000000000400906 in main (argc=24, argv=0x7fff0e5b2698) at orted.c:62
+===============================================================================
+node r591
+-------------------------------------------------------------------------------
+proc 1833
+[Thread debugging using libthread_db enabled]
+0x00002b046dbeb308 in poll () from /lib64/libc.so.6
+#0  0x00002b046dbeb308 in poll () from /lib64/libc.so.6
+#1  0x00002b046c9a7d18 in poll_dispatch (base=0x11035d0, arg=0x10e70d0, tv=<value optimized out>) at poll.c:167
+#2  0x00002b046c9a71ea in opal_event_base_loop (base=0x11035d0, flags=<value optimized out>) at event.c:838
+#3  0x00002b046c96cfc8 in orte_daemon (argc=24, argv=0x7ffff05a3e68) at orted/orted_main.c:846
+#4  0x0000000000400906 in main (argc=24, argv=0x7ffff05a3e68) at orted.c:62
+===============================================================================
+node r611
+-------------------------------------------------------------------------------
+proc 19226
+[Thread debugging using libthread_db enabled]
+0x00002ba23a21a308 in poll () from /lib64/libc.so.6
+#0  0x00002ba23a21a308 in poll () from /lib64/libc.so.6
+#1  0x00002ba238fd6d18 in poll_dispatch (base=0xf3c5d0, arg=0xf200d0, tv=<value optimized out>) at poll.c:167
+#2  0x00002ba238fd61ea in opal_event_base_loop (base=0xf3c5d0, flags=<value optimized out>) at event.c:838
+#3  0x00002ba238f9bfc8 in orte_daemon (argc=24, argv=0x7fff50415438) at orted/orted_main.c:846
+#4  0x0000000000400906 in main (argc=24, argv=0x7fff50415438) at orted.c:62
+===============================================================================
+node r610
+-------------------------------------------------------------------------------
+proc 21332
+[Thread debugging using libthread_db enabled]
+0x00002ac06abb0308 in poll () from /lib64/libc.so.6
+#0  0x00002ac06abb0308 in poll () from /lib64/libc.so.6
+#1  0x00002ac06996cd18 in poll_dispatch (base=0x22ed5d0, arg=0x22d10d0, tv=<value optimized out>) at poll.c:167
+#2  0x00002ac06996c1ea in opal_event_base_loop (base=0x22ed5d0, flags=<value optimized out>) at event.c:838
+#3  0x00002ac069931fc8 in orte_daemon (argc=24, argv=0x7fffabe828b8) at orted/orted_main.c:846
+#4  0x0000000000400906 in main (argc=24, argv=0x7fffabe828b8) at orted.c:62
+===============================================================================
+node r634
+-------------------------------------------------------------------------------
+proc 17474
+[Thread debugging using libthread_db enabled]
+0x00002afdd37e3308 in poll () from /lib64/libc.so.6
+#0  0x00002afdd37e3308 in poll () from /lib64/libc.so.6
+#1  0x00002afdd259fd18 in poll_dispatch (base=0x1aff5d0, arg=0x1ae30d0, tv=<value optimized out>) at poll.c:167
+#2  0x00002afdd259f1ea in opal_event_base_loop (base=0x1aff5d0, flags=<value optimized out>) at event.c:838
+#3  0x00002afdd2564fc8 in orte_daemon (argc=24, argv=0x7fffa8533cd8) at orted/orted_main.c:846
+#4  0x0000000000400906 in main (argc=24, argv=0x7fffa8533cd8) at orted.c:62
+===============================================================================
+node r619
+-------------------------------------------------------------------------------
+proc 3454
+[Thread debugging using libthread_db enabled]
+0x00002b37de942308 in poll () from /lib64/libc.so.6
+#0  0x00002b37de942308 in poll () from /lib64/libc.so.6
+#1  0x00002b37dd6fed18 in poll_dispatch (base=0xb125d0, arg=0xaf60d0, tv=<value optimized out>) at poll.c:167
+#2  0x00002b37dd6fe1ea in opal_event_base_loop (base=0xb125d0, flags=<value optimized out>) at event.c:838
+#3  0x00002b37dd6c3fc8 in orte_daemon (argc=24, argv=0x7fff5a4c2448) at orted/orted_main.c:846
+#4  0x0000000000400906 in main (argc=24, argv=0x7fff5a4c2448) at orted.c:62
+===============================================================================
+node r933
+-------------------------------------------------------------------------------
+proc 20896
+[Thread debugging using libthread_db enabled]
+0x00002b9197f0a308 in poll () from /lib64/libc.so.6
+#0  0x00002b9197f0a308 in poll () from /lib64/libc.so.6
+#1  0x00002b9196cc6d18 in poll_dispatch (base=0x17645d0, arg=0x17480d0, tv=<value optimized out>) at poll.c:167
+#2  0x00002b9196cc61ea in opal_event_base_loop (base=0x17645d0, flags=<value optimized out>) at event.c:838
+#3  0x00002b9196c8bfc8 in orte_daemon (argc=24, argv=0x7fff0ef6e798) at orted/orted_main.c:846
+#4  0x0000000000400906 in main (argc=24, argv=0x7fff0ef6e798) at orted.c:62
+===============================================================================
+node r1565
+-------------------------------------------------------------------------------
+proc 946
+[Thread debugging using libthread_db enabled]
+0x00002b40cf126308 in poll () from /lib64/libc.so.6
+#0  0x00002b40cf126308 in poll () from /lib64/libc.so.6
+#1  0x00002b40cdee2d18 in poll_dispatch (base=0x17ee5d0, arg=0x17d20d0, tv=<value optimized out>) at poll.c:167
+#2  0x00002b40cdee21ea in opal_event_base_loop (base=0x17ee5d0, flags=<value optimized out>) at event.c:838
+#3  0x00002b40cdea7fc8 in orte_daemon (argc=24, argv=0x7fffb1523a98) at orted/orted_main.c:846
+#4  0x0000000000400906 in main (argc=24, argv=0x7fffb1523a98) at orted.c:62
+===============================================================================
+node r1564
+-------------------------------------------------------------------------------
+proc 30044
+[Thread debugging using libthread_db enabled]
+0x00002af52e53b308 in poll () from /lib64/libc.so.6
+#0  0x00002af52e53b308 in poll () from /lib64/libc.so.6
+#1  0x00002af52d2f7d18 in poll_dispatch (base=0x1c845d0, arg=0x1c680d0, tv=<value optimized out>) at poll.c:167
+#2  0x00002af52d2f71ea in opal_event_base_loop (base=0x1c845d0, flags=<value optimized out>) at event.c:838
+#3  0x00002af52d2bcfc8 in orte_daemon (argc=24, argv=0x7fffcfe162e8) at orted/orted_main.c:846
+#4  0x0000000000400906 in main (argc=24, argv=0x7fffcfe162e8) at orted.c:62
+===============================================================================
+node r1563
+-------------------------------------------------------------------------------
+proc 25791
+[Thread debugging using libthread_db enabled]
+0x00002b9d77a22308 in poll () from /lib64/libc.so.6
+#0  0x00002b9d77a22308 in poll () from /lib64/libc.so.6
+#1  0x00002b9d767ded18 in poll_dispatch (base=0x74e5d0, arg=0x7320d0, tv=<value optimized out>) at poll.c:167
+#2  0x00002b9d767de1ea in opal_event_base_loop (base=0x74e5d0, flags=<value optimized out>) at event.c:838
+#3  0x00002b9d767a3fc8 in orte_daemon (argc=24, argv=0x7fff95ff1878) at orted/orted_main.c:846
+#4  0x0000000000400906 in main (argc=24, argv=0x7fff95ff1878) at orted.c:62
+===============================================================================
+node r1562
+-------------------------------------------------------------------------------
+proc 17068
+[Thread debugging using libthread_db enabled]
+0x00002b570e84f308 in poll () from /lib64/libc.so.6
+#0  0x00002b570e84f308 in poll () from /lib64/libc.so.6
+#1  0x00002b570d60bd18 in poll_dispatch (base=0x11b05d0, arg=0x11940d0, tv=<value optimized out>) at poll.c:167
+#2  0x00002b570d60b1ea in opal_event_base_loop (base=0x11b05d0, flags=<value optimized out>) at event.c:838
+#3  0x00002b570d5d0fc8 in orte_daemon (argc=24, argv=0x7fff744a3ae8) at orted/orted_main.c:846
+#4  0x0000000000400906 in main (argc=24, argv=0x7fff744a3ae8) at orted.c:62
+===============================================================================
+node r1560
+-------------------------------------------------------------------------------
+proc 16591
+[Thread debugging using libthread_db enabled]
+0x00002b23bec79308 in poll () from /lib64/libc.so.6
+#0  0x00002b23bec79308 in poll () from /lib64/libc.so.6
+#1  0x00002b23bda35d18 in poll_dispatch (base=0x13b85d0, arg=0x139c0d0, tv=<value optimized out>) at poll.c:167
+#2  0x00002b23bda351ea in opal_event_base_loop (base=0x13b85d0, flags=<value optimized out>) at event.c:838
+#3  0x00002b23bd9fafc8 in orte_daemon (argc=24, argv=0x7fffd5ed3e18) at orted/orted_main.c:846
+#4  0x0000000000400906 in main (argc=24, argv=0x7fffd5ed3e18) at orted.c:62
+===============================================================================
+node r1538
+-------------------------------------------------------------------------------
+proc 2016
+[Thread debugging using libthread_db enabled]
+0x00002ba94bc5c308 in poll () from /lib64/libc.so.6
+#0  0x00002ba94bc5c308 in poll () from /lib64/libc.so.6
+#1  0x00002ba94aa18d18 in poll_dispatch (base=0x7065d0, arg=0x6ea0d0, tv=<value optimized out>) at poll.c:167
+#2  0x00002ba94aa181ea in opal_event_base_loop (base=0x7065d0, flags=<value optimized out>) at event.c:838
+#3  0x00002ba94a9ddfc8 in orte_daemon (argc=24, argv=0x7fffd7a6b8c8) at orted/orted_main.c:846
+#4  0x0000000000400906 in main (argc=24, argv=0x7fffd7a6b8c8) at orted.c:62
+===============================================================================
+node r1530
+-------------------------------------------------------------------------------
+proc 26465
+[Thread debugging using libthread_db enabled]
+0x00002b12c0cb8308 in poll () from /lib64/libc.so.6
+#0  0x00002b12c0cb8308 in poll () from /lib64/libc.so.6
+#1  0x00002b12bfa74d18 in poll_dispatch (base=0xfb75d0, arg=0xf9b0d0, tv=<value optimized out>) at poll.c:167
+#2  0x00002b12bfa741ea in opal_event_base_loop (base=0xfb75d0, flags=<value optimized out>) at event.c:838
+#3  0x00002b12bfa39fc8 in orte_daemon (argc=24, argv=0x7fff6bda9e58) at orted/orted_main.c:846
+#4  0x0000000000400906 in main (argc=24, argv=0x7fff6bda9e58) at orted.c:62
+===============================================================================
+node r1581
+-------------------------------------------------------------------------------
+proc 24564
+[Thread debugging using libthread_db enabled]
+0x00002b7d2b2fd308 in poll () from /lib64/libc.so.6
+#0  0x00002b7d2b2fd308 in poll () from /lib64/libc.so.6
+#1  0x00002b7d2a0b9d18 in poll_dispatch (base=0x1cba5d0, arg=0x1c9e0d0, tv=<value optimized out>) at poll.c:167
+#2  0x00002b7d2a0b91ea in opal_event_base_loop (base=0x1cba5d0, flags=<value optimized out>) at event.c:838
+#3  0x00002b7d2a07efc8 in orte_daemon (argc=24, argv=0x7fff6c2ad3c8) at orted/orted_main.c:846
+#4  0x0000000000400906 in main (argc=24, argv=0x7fff6c2ad3c8) at orted.c:62
+===============================================================================
+node r1579
+-------------------------------------------------------------------------------
+proc 25763
+[Thread debugging using libthread_db enabled]
+0x00002af890d5f308 in poll () from /lib64/libc.so.6
+#0  0x00002af890d5f308 in poll () from /lib64/libc.so.6
+#1  0x00002af88fb1bd18 in poll_dispatch (base=0x156b5d0, arg=0x154f0d0, tv=<value optimized out>) at poll.c:167
+#2  0x00002af88fb1b1ea in opal_event_base_loop (base=0x156b5d0, flags=<value optimized out>) at event.c:838
+#3  0x00002af88fae0fc8 in orte_daemon (argc=24, argv=0x7fff04ca8ad8) at orted/orted_main.c:846
+#4  0x0000000000400906 in main (argc=24, argv=0x7fff04ca8ad8) at orted.c:62
+===============================================================================
+node r1600
+-------------------------------------------------------------------------------
+proc 22137
+[Thread debugging using libthread_db enabled]
+0x00002b0ba674c308 in poll () from /lib64/libc.so.6
+#0  0x00002b0ba674c308 in poll () from /lib64/libc.so.6
+#1  0x00002b0ba5508d18 in poll_dispatch (base=0x10075d0, arg=0xfeb0d0, tv=<value optimized out>) at poll.c:167
+#2  0x00002b0ba55081ea in opal_event_base_loop (base=0x10075d0, flags=<value optimized out>) at event.c:838
+#3  0x00002b0ba54cdfc8 in orte_daemon (argc=24, argv=0x7fff734ea948) at orted/orted_main.c:846
+#4  0x0000000000400906 in main (argc=24, argv=0x7fff734ea948) at orted.c:62
+===============================================================================
+node r1601
+-------------------------------------------------------------------------------
+proc 24851
+[Thread debugging using libthread_db enabled]
+0x00002aee062dc308 in poll () from /lib64/libc.so.6
+#0  0x00002aee062dc308 in poll () from /lib64/libc.so.6
+#1  0x00002aee05098d18 in poll_dispatch (base=0x19935d0, arg=0x19770d0, tv=<value optimized out>) at poll.c:167
+#2  0x00002aee050981ea in opal_event_base_loop (base=0x19935d0, flags=<value optimized out>) at event.c:838
+#3  0x00002aee0505dfc8 in orte_daemon (argc=24, argv=0x7fff6cc4c308) at orted/orted_main.c:846
+#4  0x0000000000400906 in main (argc=24, argv=0x7fff6cc4c308) at orted.c:62
+===============================================================================
+node r1523
+-------------------------------------------------------------------------------
+proc 28713
+[Thread debugging using libthread_db enabled]
+0x00002ae5cfb92308 in poll () from /lib64/libc.so.6
+#0  0x00002ae5cfb92308 in poll () from /lib64/libc.so.6
+#1  0x00002ae5ce94ed18 in poll_dispatch (base=0x19eb5d0, arg=0x19cf0d0, tv=<value optimized out>) at poll.c:167
+#2  0x00002ae5ce94e1ea in opal_event_base_loop (base=0x19eb5d0, flags=<value optimized out>) at event.c:838
+#3  0x00002ae5ce913fc8 in orte_daemon (argc=24, argv=0x7fff5f7b69f8) at orted/orted_main.c:846
+#4  0x0000000000400906 in main (argc=24, argv=0x7fff5f7b69f8) at orted.c:62
+===============================================================================
+node r1522
+-------------------------------------------------------------------------------
+proc 29952
+[Thread debugging using libthread_db enabled]
+0x00002ae6719e1308 in poll () from /lib64/libc.so.6
+#0  0x00002ae6719e1308 in poll () from /lib64/libc.so.6
+#1  0x00002ae67079dd18 in poll_dispatch (base=0x1b755d0, arg=0x1b590d0, tv=<value optimized out>) at poll.c:167
+#2  0x00002ae67079d1ea in opal_event_base_loop (base=0x1b755d0, flags=<value optimized out>) at event.c:838
+#3  0x00002ae670762fc8 in orte_daemon (argc=24, argv=0x7fff2e295a68) at orted/orted_main.c:846
+#4  0x0000000000400906 in main (argc=24, argv=0x7fff2e295a68) at orted.c:62
+===============================================================================
+node r1527
+-------------------------------------------------------------------------------
+proc 17582
+[Thread debugging using libthread_db enabled]
+0x00002b08ca166308 in poll () from /lib64/libc.so.6
+#0  0x00002b08ca166308 in poll () from /lib64/libc.so.6
+#1  0x00002b08c8f22d18 in poll_dispatch (base=0xca95d0, arg=0xc8d0d0, tv=<value optimized out>) at poll.c:167
+#2  0x00002b08c8f221ea in opal_event_base_loop (base=0xca95d0, flags=<value optimized out>) at event.c:838
+#3  0x00002b08c8ee7fc8 in orte_daemon (argc=24, argv=0x7fffe8645798) at orted/orted_main.c:846
+#4  0x0000000000400906 in main (argc=24, argv=0x7fffe8645798) at orted.c:62
+===============================================================================
+node r1526
+-------------------------------------------------------------------------------
+proc 18644
+[Thread debugging using libthread_db enabled]
+0x00002b140c2dd308 in poll () from /lib64/libc.so.6
+#0  0x00002b140c2dd308 in poll () from /lib64/libc.so.6
+#1  0x00002b140b099d18 in poll_dispatch (base=0xe6c5d0, arg=0xe500d0, tv=<value optimized out>) at poll.c:167
+#2  0x00002b140b0991ea in opal_event_base_loop (base=0xe6c5d0, flags=<value optimized out>) at event.c:838
+#3  0x00002b140b05efc8 in orte_daemon (argc=24, argv=0x7fffc16f8028) at orted/orted_main.c:846
+#4  0x0000000000400906 in main (argc=24, argv=0x7fffc16f8028) at orted.c:62
+===============================================================================
+node r1525
+-------------------------------------------------------------------------------
+proc 4431
+[Thread debugging using libthread_db enabled]
+0x00002aded2dc6308 in poll () from /lib64/libc.so.6
+#0  0x00002aded2dc6308 in poll () from /lib64/libc.so.6
+#1  0x00002aded1b82d18 in poll_dispatch (base=0xa4e5d0, arg=0xa320d0, tv=<value optimized out>) at poll.c:167
+#2  0x00002aded1b821ea in opal_event_base_loop (base=0xa4e5d0, flags=<value optimized out>) at event.c:838
+#3  0x00002aded1b47fc8 in orte_daemon (argc=24, argv=0x7fff3c97e018) at orted/orted_main.c:846
+#4  0x0000000000400906 in main (argc=24, argv=0x7fff3c97e018) at orted.c:62
+===============================================================================
+node r1524
+-------------------------------------------------------------------------------
+proc 30864
+[Thread debugging using libthread_db enabled]
+0x00002abc76651308 in poll () from /lib64/libc.so.6
+#0  0x00002abc76651308 in poll () from /lib64/libc.so.6
+#1  0x00002abc7540dd18 in poll_dispatch (base=0xa9b5d0, arg=0xa7f0d0, tv=<value optimized out>) at poll.c:167
+#2  0x00002abc7540d1ea in opal_event_base_loop (base=0xa9b5d0, flags=<value optimized out>) at event.c:838
+#3  0x00002abc753d2fc8 in orte_daemon (argc=24, argv=0x7fff3ec30b58) at orted/orted_main.c:846
+#4  0x0000000000400906 in main (argc=24, argv=0x7fff3ec30b58) at orted.c:62
+===============================================================================
+node r1541
+-------------------------------------------------------------------------------
+proc 5330
+[Thread debugging using libthread_db enabled]
+0x00002b5346682308 in poll () from /lib64/libc.so.6
+#0  0x00002b5346682308 in poll () from /lib64/libc.so.6
+#1  0x00002b534543ed18 in poll_dispatch (base=0x1b285d0, arg=0x1b0c0d0, tv=<value optimized out>) at poll.c:167
+#2  0x00002b534543e1ea in opal_event_base_loop (base=0x1b285d0, flags=<value optimized out>) at event.c:838
+#3  0x00002b5345403fc8 in orte_daemon (argc=24, argv=0x7fffce98ae08) at orted/orted_main.c:846
+#4  0x0000000000400906 in main (argc=24, argv=0x7fffce98ae08) at orted.c:62
+===============================================================================
+node r1540
+-------------------------------------------------------------------------------
+proc 3363
+[Thread debugging using libthread_db enabled]
+0x00002b45ca3ff308 in poll () from /lib64/libc.so.6
+#0  0x00002b45ca3ff308 in poll () from /lib64/libc.so.6
+#1  0x00002b45c91bbd18 in poll_dispatch (base=0xbb85d0, arg=0xb9c0d0, tv=<value optimized out>) at poll.c:167
+#2  0x00002b45c91bb1ea in opal_event_base_loop (base=0xbb85d0, flags=<value optimized out>) at event.c:838
+#3  0x00002b45c9180fc8 in orte_daemon (argc=24, argv=0x7fff48b5c5c8) at orted/orted_main.c:846
+#4  0x0000000000400906 in main (argc=24, argv=0x7fff48b5c5c8) at orted.c:62
+===============================================================================
+node r1529
+-------------------------------------------------------------------------------
+proc 17760
+[Thread debugging using libthread_db enabled]
+0x00002b70d0e11308 in poll () from /lib64/libc.so.6
+#0  0x00002b70d0e11308 in poll () from /lib64/libc.so.6
+#1  0x00002b70cfbcdd18 in poll_dispatch (base=0x1c105d0, arg=0x1bf40d0, tv=<value optimized out>) at poll.c:167
+#2  0x00002b70cfbcd1ea in opal_event_base_loop (base=0x1c105d0, flags=<value optimized out>) at event.c:838
+#3  0x00002b70cfb92fc8 in orte_daemon (argc=24, argv=0x7fff96079af8) at orted/orted_main.c:846
+#4  0x0000000000400906 in main (argc=24, argv=0x7fff96079af8) at orted.c:62
+===============================================================================
+node r225
+-------------------------------------------------------------------------------
+proc 6003
+[Thread debugging using libthread_db enabled]
+0x00002b8f3fca0308 in poll () from /lib64/libc.so.6
+#0  0x00002b8f3fca0308 in poll () from /lib64/libc.so.6
+#1  0x00002b8f3ea5cd18 in poll_dispatch (base=0x15725d0, arg=0x15560d0, tv=<value optimized out>) at poll.c:167
+#2  0x00002b8f3ea5c1ea in opal_event_base_loop (base=0x15725d0, flags=<value optimized out>) at event.c:838
+#3  0x00002b8f3ea21fc8 in orte_daemon (argc=24, argv=0x7fff0aefb248) at orted/orted_main.c:846
+#4  0x0000000000400906 in main (argc=24, argv=0x7fff0aefb248) at orted.c:62
+===============================================================================
+node r223
+-------------------------------------------------------------------------------
+proc 3342
+[Thread debugging using libthread_db enabled]
+0x00002aae2fd7b308 in poll () from /lib64/libc.so.6
+#0  0x00002aae2fd7b308 in poll () from /lib64/libc.so.6
+#1  0x00002aae2eb37d18 in poll_dispatch (base=0x21715d0, arg=0x21550d0, tv=<value optimized out>) at poll.c:167
+#2  0x00002aae2eb371ea in opal_event_base_loop (base=0x21715d0, flags=<value optimized out>) at event.c:838
+#3  0x00002aae2eafcfc8 in orte_daemon (argc=24, argv=0x7fff530e2838) at orted/orted_main.c:846
+#4  0x0000000000400906 in main (argc=24, argv=0x7fff530e2838) at orted.c:62
+===============================================================================
+node r1547
+-------------------------------------------------------------------------------
+proc 28697
+[Thread debugging using libthread_db enabled]
+0x00002b94796c3308 in poll () from /lib64/libc.so.6
+#0  0x00002b94796c3308 in poll () from /lib64/libc.so.6
+#1  0x00002b947847fd18 in poll_dispatch (base=0xbb15d0, arg=0xb950d0, tv=<value optimized out>) at poll.c:167
+#2  0x00002b947847f1ea in opal_event_base_loop (base=0xbb15d0, flags=<value optimized out>) at event.c:838
+#3  0x00002b9478444fc8 in orte_daemon (argc=24, argv=0x7fff9050ad68) at orted/orted_main.c:846
+#4  0x0000000000400906 in main (argc=24, argv=0x7fff9050ad68) at orted.c:62
+===============================================================================
+node r1546
+-------------------------------------------------------------------------------
+proc 455
+[Thread debugging using libthread_db enabled]
+0x00002b4aeae79308 in poll () from /lib64/libc.so.6
+#0  0x00002b4aeae79308 in poll () from /lib64/libc.so.6
+#1  0x00002b4ae9c35d18 in poll_dispatch (base=0xffa5d0, arg=0xfde0d0, tv=<value optimized out>) at poll.c:167
+#2  0x00002b4ae9c351ea in opal_event_base_loop (base=0xffa5d0, flags=<value optimized out>) at event.c:838
+#3  0x00002b4ae9bfafc8 in orte_daemon (argc=24, argv=0x7fffbba0e0b8) at orted/orted_main.c:846
+#4  0x0000000000400906 in main (argc=24, argv=0x7fffbba0e0b8) at orted.c:62
+===============================================================================
+node r1580
+-------------------------------------------------------------------------------
+proc 24625
+[Thread debugging using libthread_db enabled]
+0x00002b19369ae308 in poll () from /lib64/libc.so.6
+#0  0x00002b19369ae308 in poll () from /lib64/libc.so.6
+#1  0x00002b193576ad18 in poll_dispatch (base=0x19ce5d0, arg=0x19b20d0, tv=<value optimized out>) at poll.c:167
+#2  0x00002b193576a1ea in opal_event_base_loop (base=0x19ce5d0, flags=<value optimized out>) at event.c:838
+#3  0x00002b193572ffc8 in orte_daemon (argc=24, argv=0x7fff3ec5e1a8) at orted/orted_main.c:846
+#4  0x0000000000400906 in main (argc=24, argv=0x7fff3ec5e1a8) at orted.c:62
+===============================================================================
+node r1573
+-------------------------------------------------------------------------------
+proc 25492
+[Thread debugging using libthread_db enabled]
+0x00002aae8ef02308 in poll () from /lib64/libc.so.6
+#0  0x00002aae8ef02308 in poll () from /lib64/libc.so.6
+#1  0x00002aae8dcbed18 in poll_dispatch (base=0x22945d0, arg=0x22780d0, tv=<value optimized out>) at poll.c:167
+#2  0x00002aae8dcbe1ea in opal_event_base_loop (base=0x22945d0, flags=<value optimized out>) at event.c:838
+#3  0x00002aae8dc83fc8 in orte_daemon (argc=24, argv=0x7fff5c5ca3b8) at orted/orted_main.c:846
+#4  0x0000000000400906 in main (argc=24, argv=0x7fff5c5ca3b8) at orted.c:62
+===============================================================================
+node r1542
+-------------------------------------------------------------------------------
+proc 30296
+[Thread debugging using libthread_db enabled]
+0x00002b0499b39308 in poll () from /lib64/libc.so.6
+#0  0x00002b0499b39308 in poll () from /lib64/libc.so.6
+#1  0x00002b04988f5d18 in poll_dispatch (base=0x8405d0, arg=0x8240d0, tv=<value optimized out>) at poll.c:167
+#2  0x00002b04988f51ea in opal_event_base_loop (base=0x8405d0, flags=<value optimized out>) at event.c:838
+#3  0x00002b04988bafc8 in orte_daemon (argc=24, argv=0x7fff753950c8) at orted/orted_main.c:846
+#4  0x0000000000400906 in main (argc=24, argv=0x7fff753950c8) at orted.c:62
+===============================================================================
+node r1531
+-------------------------------------------------------------------------------
+proc 26783
+[Thread debugging using libthread_db enabled]
+0x00002ad9e1a9b308 in poll () from /lib64/libc.so.6
+#0  0x00002ad9e1a9b308 in poll () from /lib64/libc.so.6
+#1  0x00002ad9e0857d18 in poll_dispatch (base=0x17995d0, arg=0x177d0d0, tv=<value optimized out>) at poll.c:167
+#2  0x00002ad9e08571ea in opal_event_base_loop (base=0x17995d0, flags=<value optimized out>) at event.c:838
+#3  0x00002ad9e081cfc8 in orte_daemon (argc=24, argv=0x7fff6366dfb8) at orted/orted_main.c:846
+#4  0x0000000000400906 in main (argc=24, argv=0x7fff6366dfb8) at orted.c:62
+===============================================================================
+node r263
+-------------------------------------------------------------------------------
+proc 749
+[Thread debugging using libthread_db enabled]
+0x00002ae15a615308 in poll () from /lib64/libc.so.6
+#0  0x00002ae15a615308 in poll () from /lib64/libc.so.6
+#1  0x00002ae1593d1d18 in poll_dispatch (base=0x75e5d0, arg=0x7420d0, tv=<value optimized out>) at poll.c:167
+#2  0x00002ae1593d11ea in opal_event_base_loop (base=0x75e5d0, flags=<value optimized out>) at event.c:838
+#3  0x00002ae159396fc8 in orte_daemon (argc=24, argv=0x7fff95c0af78) at orted/orted_main.c:846
+#4  0x0000000000400906 in main (argc=24, argv=0x7fff95c0af78) at orted.c:62
+===============================================================================
+node r1536
+-------------------------------------------------------------------------------
+proc 25211
+[Thread debugging using libthread_db enabled]
+0x00002b34aee3e308 in poll () from /lib64/libc.so.6
+#0  0x00002b34aee3e308 in poll () from /lib64/libc.so.6
+#1  0x00002b34adbfad18 in poll_dispatch (base=0xae15d0, arg=0xac50d0, tv=<value optimized out>) at poll.c:167
+#2  0x00002b34adbfa1ea in opal_event_base_loop (base=0xae15d0, flags=<value optimized out>) at event.c:838
+#3  0x00002b34adbbffc8 in orte_daemon (argc=24, argv=0x7ffffa555d48) at orted/orted_main.c:846
+#4  0x0000000000400906 in main (argc=24, argv=0x7ffffa555d48) at orted.c:62
+===============================================================================
+node r264
+-------------------------------------------------------------------------------
+proc 7281
+[Thread debugging using libthread_db enabled]
+0x00002ad5f2061308 in poll () from /lib64/libc.so.6
+#0  0x00002ad5f2061308 in poll () from /lib64/libc.so.6
+#1  0x00002ad5f0e1dd18 in poll_dispatch (base=0x1a155d0, arg=0x19f90d0, tv=<value optimized out>) at poll.c:167
+#2  0x00002ad5f0e1d1ea in opal_event_base_loop (base=0x1a155d0, flags=<value optimized out>) at event.c:838
+#3  0x00002ad5f0de2fc8 in orte_daemon (argc=24, argv=0x7fff0892e538) at orted/orted_main.c:846
+#4  0x0000000000400906 in main (argc=24, argv=0x7fff0892e538) at orted.c:62
+===============================================================================
+node r1556
+-------------------------------------------------------------------------------
+proc 18848
+[Thread debugging using libthread_db enabled]
+0x00002b981de0e308 in poll () from /lib64/libc.so.6
+#0  0x00002b981de0e308 in poll () from /lib64/libc.so.6
+#1  0x00002b981cbcad18 in poll_dispatch (base=0x1f145d0, arg=0x1ef80d0, tv=<value optimized out>) at poll.c:167
+#2  0x00002b981cbca1ea in opal_event_base_loop (base=0x1f145d0, flags=<value optimized out>) at event.c:838
+#3  0x00002b981cb8ffc8 in orte_daemon (argc=24, argv=0x7fffc9f92178) at orted/orted_main.c:846
+#4  0x0000000000400906 in main (argc=24, argv=0x7fffc9f92178) at orted.c:62
