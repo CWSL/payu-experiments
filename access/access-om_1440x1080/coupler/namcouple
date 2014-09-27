@@ -410,7 +410,7 @@ INSTANT
 # Field 30 :  frazil ice fromation energy (J/m^2) 
 #             ('441' is "upward_sea_ice_basal_heat_flux' 'W m-2')
 ##########
-#pfmice_oi pfmice_i 441 1800 1 o2i.nc EXPORTED
+#pfmice_oi pfmice_i 441 900 1 o2i.nc EXPORTED
 frazil pfmice_i 441 900 1 o2i.nc EXPORTED
 1440 1080 1440 1080 cice cice LAG=0 SEQ=+1
 P 0 P 0

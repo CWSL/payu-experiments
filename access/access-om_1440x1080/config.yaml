@@ -1,6 +1,6 @@
 # PBS configuration
 queue: normal
-project: v45
+project: x77
 walltime: 5:00:00
 jobname: access-om_1440x1080
 ncpus: 1168
@@ -13,13 +13,13 @@ submodels:
     atmosphere:
         model: matm
         exe: matm_nt62.exe
-        input: core2_nyf_matm
+        input: /short/public/access/input/core2_nyf_matm
         ncpus: 1
 
     ocean:
         model: mom
         exe: fms_ACCESS-OM.x
-        input: mom_om_1440x1080
+        input: /short/public/access/input/mom_om_1440x1080
         ncpus: 960
         build:
             repository: https://github.com/nicholash/mom.git
@@ -29,7 +29,7 @@ submodels:
     ice:
         model: cice
         exe: cice_access-om_1440x1080_192p.exe
-        input: cice_om_1440x1080
+        input: /short/public/access/input/cice_om_1440x1080
         ncpus: 192
         build:
             command: 'make access-hom'
@@ -37,15 +37,20 @@ submodels:
 
     coupler:
         model: oasis
-        input: oasis_om_1440x1080
+        input: /short/public/access/input/oasis_om_1440x1080
         ncpus: 0
 
 
 calendar:
     runtime:
         years: 0
-        months: 6
+        months: 3
         days: 0 
+
+    start:
+        years: 116
+        months: 1
+        days: 1 
 
 # Misc
 stacksize: unlimited

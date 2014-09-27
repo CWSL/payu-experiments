@@ -1,6 +1,6 @@
 &setup_nml
     days_per_year  = 365
-  , year_init      = 0001
+  , year_init      = 115
   , istep0         = 0
   , dt             = 900
   , npt            = 2976
