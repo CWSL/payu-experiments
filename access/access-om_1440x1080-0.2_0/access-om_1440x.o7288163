@@ -1,0 +1,23 @@
+python/2.7.6(2):ERROR:150: Module 'python/2.7.6' conflicts with the currently loaded module(s) 'python/2.7.6-matplotlib'
+python/2.7.6(2):ERROR:102: Tcl command execution failed: source /opt/Modules/extensions/extensions.tcl
+
+python/2.7.6(2):ERROR:150: Module 'python/2.7.6' conflicts with the currently loaded module(s) 'python/2.7.6-matplotlib'
+python/2.7.6(2):ERROR:102: Tcl command execution failed: source /opt/Modules/extensions/extensions.tcl
+
+python/2.7.6(2):ERROR:150: Module 'python/2.7.6' conflicts with the currently loaded module(s) 'python/2.7.6-matplotlib'
+python/2.7.6(2):ERROR:102: Tcl command execution failed: source /opt/Modules/extensions/extensions.tcl
+
+7289513.r-man2
+======================================================================================
+			Resource Usage on 2014-10-15 20:16:22.760861:
+	JobId:  7288163.r-man2  
+	Project: x77 
+	Exit Status: 0 (Linux Signal 0)
+	Service Units: 1766.60
+	NCPUs Requested: 1168				NCPUs Used: 1168
+							CPU Time Used: 23:38:41
+	Memory Requested: 2317312mb 			Memory Used: 12391mb
+							Vmem Used: 18687mb
+	Walltime requested: 05:00:00 			Walltime Used: 01:30:45
+	jobfs request: 7300mb				jobfs used: 72mb
+======================================================================================

@@ -1,0 +1,13 @@
+======================================================================================
+			Resource Usage on 2014-10-15 20:49:12.588391:
+	JobId: 7289513.r-man2  
+	Project: x77 
+	Exit Status: 0 (Linux Signal 0)
+	Service Units: 0.52
+	NCPUs Requested: 1				NCPUs Used: 1
+							CPU Time Used: 00:17:50
+	Memory Requested: 6gb 				Memory Used: 4gb
+							Vmem Used: 4gb
+	Walltime requested: 05:00:00 			Walltime Used: 00:31:04
+	jobfs request: 100mb				jobfs used: 1mb
+======================================================================================
