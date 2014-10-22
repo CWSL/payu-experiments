@@ -23,7 +23,7 @@ submodels:
         ncpus: 40
         build:
             path_to_build_command: exp
-            repo: 'https://github.com/nicholash/mom.git'
+            repository: 'https://github.com/nicholash/mom.git'
             tag: 60-unit-testing
             command: './MOM_compile.csh --platform nci --type ACCESS-CM'
             exec_path: exec/nci/ACCESS-CM/
