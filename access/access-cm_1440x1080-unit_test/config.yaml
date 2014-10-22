@@ -1,7 +1,7 @@
 # PBS configuration
 queue: normal
 project: x77
-walltime: 5:00:00
+walltime: 1:00:00
 jobname: access-cm_1440x1080-0.3_0
 ncpus: 1248
 
@@ -23,6 +23,8 @@ submodels:
         ncpus: 960
         build:
             path_to_build_command: exp
+            repo: 'https://github.com/nicholash/mom.git'
+            tag: 60-unit-testing
             command: './MOM_compile.csh --platform nci --type ACCESS-CM'
             exec_path: exec/nci/ACCESS-CM/
 
