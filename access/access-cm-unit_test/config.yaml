@@ -25,7 +25,7 @@ submodels:
             path_to_build_command: exp
             repository: 'https://github.com/nicholash/mom.git'
             tag: 60-unit-testing
-            command: './MOM_compile.csh --platform nci --type ACCESS-CM'
+            command: './MOM_compile.csh --platform nci --type ACCESS-CM --unit_testing'
             exec_path: exec/nci/ACCESS-CM/
 
     ice:
