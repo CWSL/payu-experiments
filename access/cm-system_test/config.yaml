@@ -2,8 +2,8 @@
 queue: normal
 project: x77
 walltime: 1:00:00
-jobname: access-cm_1440x1080-0.3_0
-ncpus: 1248
+jobname: access-cm
+ncpus: 144
 
 shortpath: /short/v45
 
@@ -19,36 +19,41 @@ submodels:
     ocean:
         model: mom
         exe: fms_ACCESS-CM.x
-        input: mom_cm_1440x1080
-        ncpus: 960
+        input: mom
+        ncpus: 40
         build:
             path_to_build_command: exp
             repository: 'https://github.com/nicholash/mom.git'
             tag: 60-unit-testing
-            command: './MOM_compile.csh --platform nci --type ACCESS-CM --unit_testing'
+            command: './MOM_compile.csh --platform nci --type ACCESS-CM'
             exec_path: exec/nci/ACCESS-CM/
 
     ice:
         model: cice
-        exe: cice_access-cm_1440x1080_192p.exe
-        input: cice_cm_1440x1080
-        ncpus: 192
+        exe: cice_access-cm_360x300_6p.exe
+        input: cice
+        ncpus: 6
         build:
-            exec_path: build_access-cm_1440x1080_192p
-            command: 'make access-hcm'
+            exec_path: build_access-cm_360x300_6p
+            command: 'make access-cm'
 
     coupler:
         model: oasis
-        input: oasis_cm_1440x1080
+        input: oasis_cm
         ncpus: 0
 
 calendar:
     runtime:
         years: 0
         months: 1
-        days: 0 
+        days: 0
+
+    start:
+        year: 1
+        month: 1
+        days: 1
+
 
 # Misc
 stacksize: unlimited
-mpirun: --mca orte_base_help_aggregate 0 --mca mtl ^mxm
-collate_mem: 16GB
+mpirun: --mca orte_base_help_aggregate 0 -mca mtl ^mxm
