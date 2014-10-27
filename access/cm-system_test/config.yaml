@@ -2,7 +2,7 @@
 queue: normal
 project: x77
 walltime: 1:00:00
-jobname: access-cm
+jobname: cm
 ncpus: 144
 
 shortpath: /short/v45
@@ -23,8 +23,6 @@ submodels:
         ncpus: 40
         build:
             path_to_build_command: exp
-            repository: 'https://github.com/nicholash/mom.git'
-            tag: 60-unit-testing
             command: './MOM_compile.csh --platform nci --type ACCESS-CM'
             exec_path: exec/nci/ACCESS-CM/
 
