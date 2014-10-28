@@ -2,7 +2,7 @@
 queue: normal
 project: x77
 walltime: 1:00:00
-jobname: access-cm
+jobname: cm-unit_testing
 ncpus: 144
 
 shortpath: /short/v45
@@ -35,7 +35,7 @@ submodels:
         ncpus: 6
         build:
             exec_path: build_access-cm_360x300_6p
-            command: 'make access-cm'
+            command: './bld/build.csh nci access-cm 360x300 unit_testing'
 
     coupler:
         model: oasis
