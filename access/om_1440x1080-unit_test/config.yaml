@@ -1,6 +1,6 @@
 # PBS configuration
 queue: normal
-project: x77
+project: v45
 walltime: 5:00:00
 jobname: om_1440x1080-unit_test
 ncpus: 1168
@@ -33,7 +33,7 @@ submodels:
         input: cice_om_1440x1080
         ncpus: 192
         build:
-            command: './bld/build.csh nci access-om 1440x1080 unit_testing'
+            command: './bld/build.sh nci access-om 1440x1080 unit_testing'
             exec_path: build_access-om_1440x1080_192p
 
     coupler:
@@ -45,8 +45,8 @@ submodels:
 calendar:
     runtime:
         years: 0
-        months: 1
-        days: 0 
+        months: 0
+        days: 1 
 
     start:
         years: 1
