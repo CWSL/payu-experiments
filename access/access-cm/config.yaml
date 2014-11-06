@@ -1,6 +1,6 @@
 # PBS configuration
 queue: normal
-project: x77
+project: v45
 walltime: 5:00:00
 jobname: access-cm
 ncpus: 144
@@ -28,7 +28,7 @@ submodels:
 
     ice:
         model: cice
-        exe: cice_access-cm_360x300_6p.exe
+        exe: cice_access-cm_360x300_6p_bad_sst.exe
         input: cice
         ncpus: 6
         build:
@@ -55,3 +55,4 @@ calendar:
 # Misc
 stacksize: unlimited
 mpirun: --mca orte_base_help_aggregate 0 -mca mtl ^mxm
+debug: True

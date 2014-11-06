@@ -201,7 +201,7 @@
       layout = 8,5
       time_tendency='twolevel'
       vertical_coordinate='zstar'
-      dt_ocean = 1200
+      dt_ocean = 1800
       baroclinic_split = 1
       surface_height_split = 1
       barotropic_split = 80
@@ -417,7 +417,7 @@
             minutes = 0
             seconds = 0
             calendar = 'gregorian'
-            dt_cpld  = 1200
+            dt_cpld  = 1800
 /
 
  &ocean_sponges_tracer_nml
@@ -622,7 +622,7 @@
       send_after_ocean_update=.true.
 /
 &auscom_ice_nml
- dt_cpl=1200
+ dt_cpl=1800
  pop_icediag=.true.
  do_ice_once=.false.
  kmxice=1

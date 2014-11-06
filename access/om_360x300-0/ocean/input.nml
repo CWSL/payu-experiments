@@ -204,7 +204,7 @@
 /
 
  &ocean_model_nml
-      layout = ,
+      layout = 8,5
       time_tendency='twolevel'
       vertical_coordinate='zstar'
       dt_ocean = 1800
