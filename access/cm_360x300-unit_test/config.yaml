@@ -1,7 +1,7 @@
 # PBS configuration
 queue: normal
 project: v45
-walltime: 1:00:00
+walltime: 0:10:00
 jobname: cm-unit_testing
 ncpus: 144
 
@@ -45,8 +45,8 @@ submodels:
 calendar:
     runtime:
         years: 0
-        months: 0
-        days: 1
+        months: 1
+        days: 0
 
     start:
         year: 1
