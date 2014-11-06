@@ -1,5 +1,5 @@
 # PBS configuration
-queue: express
+queue: normal
 project: v45
 walltime: 0:10:00
 jobname: om_1440x1080-unit_test
