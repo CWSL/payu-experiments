@@ -1,7 +1,7 @@
 # PBS configuration
 queue: normal
 project: v45
-walltime: 0:10:00
+walltime: 0:05:00
 jobname: cm_1440x1080-unit_testing
 ncpus: 1248
 
