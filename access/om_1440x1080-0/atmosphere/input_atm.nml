@@ -1,10 +1,10 @@
 &coupling
-    init_date=01130701
-    inidate=01150701
-    truntime0=63072000
+    init_date=01170101
+    inidate=01170101
+    truntime0=0
     runtime=15897600
     dt_cpl=21600
-    dt_atm=900
+    dt_atm=1200
     dataset='core2'
     runtype='NY'
     caltype=0

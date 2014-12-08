@@ -90,143 +90,121 @@
 ##########
 # Field 01 : swflx down
 ##########
-swfld_ai swfld_i 367 21600 5 a2i.nc EXPORTED
+swfld_ai swfld_i 367 21600 3 a2i.nc EXPORTED
 192 94 1440 1080 nt62 cice LAG=+1200 SEQ=+1
 P  0  P  0
 #
-LOCTRANS CHECKIN MAPPING SCRIPR CHECKOUT
+LOCTRANS MAPPING SCRIPR
 INSTANT
-INT=0
 rmp_nt62_to_cice_CONSERV_FRACNNEI.nc dst
 CONSERV LR SCALAR LATLON 10 FRACNNEI FIRST
-INT=0
 #########
 # Field 02 : lwflx down
 ##########
-lwfld_ai lwfld_i 366 21600 5 a2i.nc EXPORTED
+lwfld_ai lwfld_i 366 21600 3 a2i.nc EXPORTED
 192 94 1440 1080 nt62 cice LAG=+1200 SEQ=+1
 P  0  P  0
 #
-LOCTRANS CHECKIN MAPPING SCRIPR CHECKOUT
+LOCTRANS MAPPING SCRIPR
 INSTANT
-INT=0
 rmp_nt62_to_cice_CONSERV_FRACNNEI.nc dst
 CONSERV LR SCALAR LATLON 10 FRACNNEI FIRST
-INT=0
 ##########
 # Field 03 : rainfall
 ##########
-rain_ai rain_i 26 21600 5 a2i.nc EXPORTED
+rain_ai rain_i 26 21600 3 a2i.nc EXPORTED
 192 94 1440 1080 nt62 cice LAG=+1200 SEQ=+1
 P  0  P  0
 #
-LOCTRANS CHECKIN MAPPING SCRIPR CHECKOUT
+LOCTRANS MAPPING SCRIPR
 INSTANT
-INT=0
 rmp_nt62_to_cice_CONSERV_FRACNNEI.nc dst
 CONSERV LR SCALAR LATLON 10 FRACNNEI FIRST
-INT=0
 ##########
 # Field 04 : snowfall
 ##########
-snow_ai snow_i 26 21600 5 a2i.nc EXPORTED
+snow_ai snow_i 26 21600 3 a2i.nc EXPORTED
 192 94 1440 1080 nt62 cice LAG=+1200 SEQ=+1
 P  0  P  0
 #
-LOCTRANS CHECKIN MAPPING SCRIPR CHECKOUT
+LOCTRANS MAPPING SCRIPR
 INSTANT
-INT=0
 rmp_nt62_to_cice_CONSERV_FRACNNEI.nc dst
 CONSERV LR SCALAR LATLON 10 FRACNNEI FIRST
-INT=0
 ##########
 # Field 05 : surface pressure
 ##########
-press_ai press_i 33 21600 5 a2i.nc EXPORTED
+press_ai press_i 33 21600 3 a2i.nc EXPORTED
 192 94 1440 1080 nt62 cice LAG=+1200 SEQ=+1
 P  0  P  0
 # 
-LOCTRANS CHECKIN MAPPING SCRIPR CHECKOUT
+LOCTRANS MAPPING SCRIPR
 INSTANT
-INT=0
 rmp_nt62_to_cice_CONSERV_FRACNNEI.nc dst
 CONSERV LR SCALAR LATLON 10 FRACNNEI FIRST
-INT=0
 ##########
 # Field 06 : runoff
 ##########
-runof_ai runof_i 297 21600 5 a2i.nc EXPORTED
+runof_ai runof_i 297 21600 3 a2i.nc EXPORTED
 192 94 1440 1080 nt62 cice LAG=+1200 SEQ=+1
 P  0  P  0
 # 
-LOCTRANS CHECKIN MAPPING SCRIPR CHECKOUT
+LOCTRANS MAPPING SCRIPR
 INSTANT
-INT=0
 rmp_nt62_to_cice_CONSERV_FRACNNEI.nc dst
 CONSERV LR SCALAR LATLON 10 FRACNNEI FIRST
-INT=0
 ##########
 # Field 07 : near surface (2m) air temp
 ##########
-tair_ai tair_i 110 21600 5 a2i.nc EXPORTED
+tair_ai tair_i 110 21600 3 a2i.nc EXPORTED
 192 94 1440 1080 nt62 cice LAG=+1200 SEQ=+1
 P  0  P  0
 #
-LOCTRANS CHECKIN MAPPING SCRIPR CHECKOUT
+LOCTRANS MAPPING SCRIPR
 INSTANT
-INT=0
 rmp_nt62_to_cice_CONSERV_FRACNNEI.nc dst
 CONSERV LR SCALAR LATLON 10 FRACNNEI FIRST
-INT=0
 ##########
 # Field 08 : 2m air humidity
 ##########
-qair_ai qair_i 339 21600 5 a2i.nc EXPORTED
+qair_ai qair_i 339 21600 3 a2i.nc EXPORTED
 192 94 1440 1080 nt62 cice LAG=+1200 SEQ=+1
 P  0  P  0
 #
-LOCTRANS CHECKIN MAPPING SCRIPR CHECKOUT
+LOCTRANS MAPPING SCRIPR
 INSTANT
-INT=0
 rmp_nt62_to_cice_CONSERV_FRACNNEI.nc dst
 CONSERV LR SCALAR LATLON 10 FRACNNEI FIRST
-INT=0
 ##########
 # Field 09 : 10m wind (u)
 ##########
-uwnd_ai uwnd_i 56 21600 4 a2i.nc EXPORTED
+uwnd_ai uwnd_i 56 21600 2 a2i.nc EXPORTED
 192 94 1440 1080 nt62 cice LAG=+1200 SEQ=+1
 P  0  P  0
 #
-CHECKIN MAPPING SCRIPR CHECKOUT
+MAPPING SCRIPR
 #
-INT=1
 rmp_nt62_to_cice_DISTWGT.nc dst
 DISTWGT LR VECTOR LATLON 10 4 vwnd_ai
-INT=1
 ##########
 # Field 10 : 10m wind (v)
 ##########
-vwnd_ai vwnd_i 56 21600 4 a2i.nc EXPORTED
+vwnd_ai vwnd_i 56 21600 2 a2i.nc EXPORTED
 192 94 1440 1080 nt62 cice LAG=+1200 SEQ=+1
 P  0  P  0
 #
-CHECKIN MAPPING SCRIPR CHECKOUT
+MAPPING SCRIPR
 #
-INT=1
 rmp_nt62_to_cice_DISTWGT.nc dst
 DISTWGT LR VECTOR LATLON 10 4 uwnd_ai
-INT=1
 #-------------------------------------------------
-#vwnd_ai vwnd_i 56 21600 4 a2i.nc EXPORTED
+#vwnd_ai vwnd_i 56 21600 2 a2i.nc EXPORTED
 #192 94 1440 1080 nt62 cice LAG=+1200 SEQ=+1
 #P  0  P  0
 ##
-#LOCTRANS CHECKIN INTERP CHECKOUT
+#LOCTRANS INTERP
 #INSTANT
-#INT=0
 #BICUBIC  G  SCALAR
-#INT=0
 ############################################################################
 #
 #                      ICE --->>> OCEAN
@@ -444,15 +422,13 @@ INSTANT
 ########## 
 # Field 33 : ice/ocean surface temp (no ref no! '331' is snow temp!)
 ##########
-isst_ia isst_a 331 21600 5 i2a.nc EXPORTED
+isst_ia isst_a 331 21600 3 i2a.nc EXPORTED
 1440 1080 192 94 cice nt62 LAG=+1200 SEQ=+1
 P 0 P 0
 #
-LOCTRANS CHECKIN MAPPING SCRIPR CHECKOUT
-INSTANT  
-INT=0
+LOCTRANS MAPPING SCRIPR
+INSTANT
 rmp_cice_to_nt62_CONSERV_FRACNNEI.nc dst
 CONSERV LR SCALAR LATLON 10 FRACNNEI FIRST
-INT=0
 ############################################################################
  $END

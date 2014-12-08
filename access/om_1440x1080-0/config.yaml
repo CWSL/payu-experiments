@@ -2,20 +2,14 @@
 queue: normal
 project: x77
 walltime: 5:00:00
-jobname: access-om_1440x1080-2.0_0
-ncpus: 1168
+jobname: om_1440x1080-0
+ncpus: 1152
 
 shortpath: /short/v45
 
 # Model configuration
 model: access
 submodels:
-    atmosphere:
-        model: matm
-        exe: matm_nt62.exe
-        input: /short/public/access/input/core2_nyf_matm
-        ncpus: 1
-
     ocean:
         model: mom
         exe: fms_ACCESS-OM.x
@@ -35,6 +29,12 @@ submodels:
             command: 'make access-hom'
             exec_path: build_access-om_1440x1080_192p
 
+    atmosphere:
+        model: matm
+        exe: matm_nt62.exe
+        input: /short/public/access/input/core2_nyf_matm
+        ncpus: 1
+
     coupler:
         model: oasis
         input: /short/public/access/input/oasis_om_1440x1080
@@ -44,16 +44,16 @@ submodels:
 calendar:
     runtime:
         years: 0
-        months: 1
-        days: 0 
+        months: 12
+        days: 0
 
     start:
         years: 1
         months: 1
-        days: 1 
+        days: 1
 
 # Misc
 stacksize: unlimited
-mpirun: --mca orte_base_help_aggregate 0 -mca mtl ^mxm
-
+mpirun: --mca orte_base_help_aggregate 0 -bind-to none 
 collate_mem: 6GB
+qsub_flags: -lother=hyperthread
