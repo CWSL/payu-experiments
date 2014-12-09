@@ -3,43 +3,42 @@ queue: normal
 project: x77
 walltime: 5:00:00
 jobname: om_1440x1080-0
-ncpus: 1152
+ncpus: 1168
 
 shortpath: /short/v45
 
 # Model configuration
 model: access
 submodels:
-    ocean:
-        model: mom
-        exe: fms_ACCESS-OM.x
-        input: /short/public/access/input/mom_om_1440x1080
-        ncpus: 960
-        build:
-            repository: https://github.com/nicholash/mom.git
-            command: './MOM_compile.csh --platform nci --type ACCESS-OM'
-            exec_path: exec/nci/ACCESS-OM/
+    - name: ocean
+      model: mom
+      exe: fms_ACCESS-OM.x
+      input: /short/public/access/input/mom_om_1440x1080
+      ncpus: 960
+      build:
+          repository: https://github.com/nicholash/mom.git
+          command: './MOM_compile.csh --platform nci --type ACCESS-OM'
+          exec_path: exec/nci/ACCESS-OM/
 
-    ice:
-        model: cice
-        exe: cice_access-om_1440x1080_192p.exe
-        input: /short/public/access/input/cice_om_1440x1080
-        ncpus: 192
-        build:
-            command: 'make access-hom'
-            exec_path: build_access-om_1440x1080_192p
+    - name: ice
+      model: cice
+      exe: cice_access-om_1440x1080_192p.exe
+      input: /short/public/access/input/cice_om_1440x1080
+      ncpus: 192
+      build:
+          command: 'make access-hom'
+          exec_path: build_access-om_1440x1080_192p
 
-    atmosphere:
+    - name: atmosphere
         model: matm
         exe: matm_nt62.exe
         input: /short/public/access/input/core2_nyf_matm
         ncpus: 1
 
-    coupler:
+    - name: coupler
         model: oasis
         input: /short/public/access/input/oasis_om_1440x1080
         ncpus: 0
-
 
 calendar:
     runtime:
@@ -54,6 +53,6 @@ calendar:
 
 # Misc
 stacksize: unlimited
-mpirun: --mca orte_base_help_aggregate 0 -bind-to none 
+mpirun: --mca orte_base_help_aggregate 0 -bind-to none
 collate_mem: 6GB
 qsub_flags: -lother=hyperthread
