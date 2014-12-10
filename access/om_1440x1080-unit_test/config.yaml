@@ -10,35 +10,34 @@ shortpath: /short/v45
 # Model configuration
 model: access
 submodels:
-    atmosphere:
-        model: matm
-        exe: matm_nt62.exe
-        input: /short/public/access/input/core2_nyf_matm
-        ncpus: 1
+    - name: coupler
+      model: oasis
+      input: oasis_om_1440x1080
+      ncpus: 0
 
-    ocean:
-        model: mom
-        exe: fms_ACCESS-OM.x
-        input: mom_om_1440x1080
-        ncpus: 960
-        build:
-            command: './MOM_compile.csh --platform nci --type ACCESS-OM --unit_testing'
-            exec_path: exec/nci/ACCESS-OM/
+    - name: atmosphere
+      model: matm
+      exe: matm_nt62.exe
+      input: /short/public/access/input/core2_nyf_matm
+      ncpus: 1
 
-    ice:
-        model: cice
-        exe: cice_access-om_1440x1080_192p.exe
-        input: cice_om_1440x1080
-        ncpus: 192
-        build:
-            command: './bld/build.sh nci access-om 1440x1080 unit_testing'
-            exec_path: build_access-om_1440x1080_192p
+    - name: ocean
+      model: mom
+      exe: fms_ACCESS-OM.x
+      input: mom_om_1440x1080
+      ncpus: 960
+      build:
+          command: './MOM_compile.csh --platform nci --type ACCESS-OM --unit_testing'
+          exec_path: exec/nci/ACCESS-OM/
 
-    coupler:
-        model: oasis
-        input: oasis_om_1440x1080
-        ncpus: 0
-
+    - name: ice
+      model: cice
+      exe: cice_access-om_1440x1080_192p.exe
+      input: cice_om_1440x1080
+      ncpus: 192
+      build:
+          command: './bld/build.sh nci access-om 1440x1080 unit_testing'
+          exec_path: build_access-om_1440x1080_192p
 
 calendar:
     runtime:

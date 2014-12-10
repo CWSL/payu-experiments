@@ -10,35 +10,35 @@ shortpath: /short/v45
 # Model configuration
 model: access
 submodels:
-    atmosphere:
-        model: um
-        exe: um7.3x
-        input: um
-        ncpus: 96
+    - name: coupler
+      model: oasis
+      input: oasis_cm_1440x1080
+      ncpus: 0
 
-    ocean:
-        model: mom
-        exe: fms_ACCESS-CM.x
-        input: mom_cm_1440x1080
-        ncpus: 960
-        build:
-            path_to_build_command: exp
-            command: './MOM_compile.csh --platform nci --type ACCESS-CM'
-            exec_path: exec/nci/ACCESS-CM/
+    - name: atmosphere
+      model: um
+      exe: um7.3x
+      input: um
+      ncpus: 96
 
-    ice:
-        model: cice
-        exe: cice_access-cm_1440x1080_192p.exe
-        input: cice_cm_1440x1080
-        ncpus: 192
-        build:
-            exec_path: build_access-cm_1440x1080_192p
-            command: 'make access-hcm'
+    - name: ocean
+      model: mom
+      exe: fms_ACCESS-CM.x
+      input: mom_cm_1440x1080
+      ncpus: 960
+      build:
+          path_to_build_command: exp
+          command: './MOM_compile.csh --platform nci --type ACCESS-CM'
+          exec_path: exec/nci/ACCESS-CM/
 
-    coupler:
-        model: oasis
-        input: oasis_cm_1440x1080
-        ncpus: 0
+    - name: ice
+      model: cice
+      exe: cice_access-cm_1440x1080_192p.exe
+      input: cice_cm_1440x1080
+      ncpus: 192
+      build:
+          exec_path: build_access-cm_1440x1080_192p
+          command: 'make access-hcm'
 
 calendar:
     runtime:
