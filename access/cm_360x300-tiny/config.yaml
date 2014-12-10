@@ -54,5 +54,6 @@ calendar:
 
 # Misc
 stacksize: unlimited
-mpirun: --mca orte_base_help_aggregate 0 -mca mtl ^mxm
+mpirun: --mca orte_base_help_aggregate 0
+qsub_flags: -lother=hyperthread
 collate_mem: 3GB
