@@ -10,6 +10,11 @@ shortpath: /short/v45
 # Model configuration
 model: access
 submodels:
+    - name: coupler
+      model: oasis
+      input: /short/public/access/input/oasis_om_1440x1080
+      ncpus: 0
+
     - name: ocean
       model: mom
       exe: fms_ACCESS-OM.x
@@ -30,15 +35,10 @@ submodels:
           exec_path: build_access-om_1440x1080_192p
 
     - name: atmosphere
-        model: matm
-        exe: matm_nt62.exe
-        input: /short/public/access/input/core2_nyf_matm
-        ncpus: 1
-
-    - name: coupler
-        model: oasis
-        input: /short/public/access/input/oasis_om_1440x1080
-        ncpus: 0
+      model: matm
+      exe: matm_nt62.exe
+      input: /short/public/access/input/core2_nyf_matm
+      ncpus: 1
 
 calendar:
     runtime:
