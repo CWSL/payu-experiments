@@ -313,7 +313,7 @@ LOCTRANS
 INSTANT
 ##########
 # Field 21 : runoff
-########## 
+##########
 runof_io runof 297 1800 1 i2o.nc IGNORED
 cice cice LAG=0 SEQ=+1
 #
@@ -321,7 +321,7 @@ LOCTRANS
 INSTANT
 ##########
 # Field 22 : surface pressure
-########## 
+##########
 press_io p 33 1800 1 i2o.nc IGNORED
 cice cice LAG=0 SEQ=+1
 #
@@ -329,15 +329,15 @@ LOCTRANS
 INSTANT
 ##########
 # Field 23 : ice concentration
-########## 
+##########
 aice_io aice 44 1800 1 i2o.nc IGNORED
 cice cice LAG=0 SEQ=+1
 #
-LOCTRANS 
+LOCTRANS
 INSTANT
 ##########
 # Field 24 : ice melting waterflux
-########## 
+##########
 melt_io wfimelt 36 1800 1 i2o.nc IGNORED
 cice cice LAG=0 SEQ=+1
 #
@@ -345,41 +345,41 @@ LOCTRANS
 INSTANT
 ##########
 # Field 25 : ice forming eaterflux
-########## 
+##########
 form_io wfiform 36 1800 1 i2o.nc IGNORED
 cice cice LAG=0 SEQ=+1
 #
 LOCTRANS
 INSTANT
 ############################################################################
-# 
+#
 #                      OCEAN --->>> ICE
 #                      ----------------
-########## 
+##########
 # Field 26 : Sea surface temperature (Celsius in MOM4)
 ##########
 t_surf sst_i 1 1800 1 o2i.nc IGNORED
 cice cice LAG=0 SEQ=+1
-#  
+#
 LOCTRANS
 INSTANT
-########## 
+##########
 # Field 27 : Sea surface salinity (psu)
 ##########
 s_surf sss_i 312 1800 1 o2i.nc IGNORED
 cice cice LAG=0 SEQ=+1
-#  
+#
 LOCTRANS
 INSTANT
 ##########
 # Field 28 :  'eastward' sea surface water velocity
-########## 
+##########
 u_surf ssu_i 181 1800 1 o2i.nc IGNORED
 cice cice LAG=0 SEQ=+1
 #
 LOCTRANS
 INSTANT
-########## 
+##########
 # Field 29 : 'northward' sea surface water velocity
 ##########
 v_surf ssv_i 261 1800 1 o2i.nc IGNORED
@@ -409,7 +409,7 @@ INSTANT
 ##########
 # Field 32 :  sea surface slope _y_ (m/m)
 #             ( '310' is "sea_surface_elevation")
-########## 
+##########
 dssldy ssly_i 310 1800 1 o2i.nc IGNORED
 cice cice LAG=0 SEQ=+1
 #
@@ -419,7 +419,7 @@ INSTANT
 #
 #                      ICE --->>> ATMOSPHERE
 #                      ---------------------
-########## 
+##########
 # Field 33 : ice/ocean surface temp (no ref no! '331' is snow temp!)
 ##########
 isst_ia isst_a 331 21600 5 i2a.nc EXPORTED
@@ -427,7 +427,7 @@ isst_ia isst_a 331 21600 5 i2a.nc EXPORTED
 P 0 P 0
 #
 LOCTRANS CHECKIN MAPPING SCRIPR CHECKOUT
-INSTANT  
+INSTANT
 INT=0
 rmp_cice_to_nt62_CONSERV_FRACNNEI.nc dst
 CONSERV LR SCALAR LATLON 10 FRACNNEI FIRST
