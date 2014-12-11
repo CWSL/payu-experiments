@@ -1,0 +1,35 @@
+
+The output can be found in /home/599/nah599/v45/access-tests/lab/archive/om_1440x1080-mpi_test
+
+output000: mpirun:
+    * Max of 1.72 GB, the rest are around 1.1
+    * total runtime: 384 secs.
+output001: mpirun: --mca btl_openib_free_list_max 8
+output005: mpirun: --mca btl_openib_free_list_max 8
+    * Mostly around 830 MB, althought there is one that spikes as 2.2 GB... may need further investigation. I think it is spiking at the end of the run.
+    * total runtime: 364 secs. That's interesting?
+    * total runtime: 383 secs.
+output001: mpirun: --mca mpool_rdma_rcache_size_limit 1048576
+    * The same as the first... i.e. it makes no difference.
+    * total runtime: 387 secs.
+output003: mpirun: --mca btl_openib_use_eager_rdma 0
+    * Max 2.265, the rest around 1.1
+    * total runtime: 407.388788
+output004: mpirun: --mca btl_openib_free_list_max 2
+    * Mostly around 820, there is one at 2.2 GB
+    * total runtime: 418
+
+It seems that the peak memory usage is at the end of the run. I wonder whether this is about gathering the run statistics. Turn that off when I'm doing tests.
+    * cab be turned off with:
+         &mpp_nml
+                mpp_record_timing_data=.false.
+         /
+
+So for the time being stick with --mca btl_openib_free_list_max 8. I'd like to find out what the total MPI memory usage is, vs total model usage (e.g. allocates etc).
+    * After looking at the logs my best guess is that MPI is using around 60%! of memory. Seems excessive/wrong.... oh no, could be correct. So reducing the free list cuts MPI memory usage by more than a half. Also I think the savings will be bigger as the number of nodes increases.
+
+1: mpirun without valgrind.
+    * 11 days in 10 minutes.
+
+1: mpirun without valgrind and --mca btl ^openib
+    * Ha! so this is about the same performance.
