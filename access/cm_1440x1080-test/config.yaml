@@ -43,8 +43,8 @@ submodels:
 calendar:
     runtime:
         years: 0
-        months: 1
-        days: 0 
+        months: 0
+        days: 1
 
 # Misc
 stacksize: unlimited
