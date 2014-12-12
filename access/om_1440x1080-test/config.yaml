@@ -1,7 +1,7 @@
 # PBS configuration
 queue: normal
 project: v45
-walltime: 0:05:00
+walltime: 0:30:00
 jobname: om_1440x1080-unit_test
 ncpus: 1168
 
@@ -55,3 +55,5 @@ stacksize: unlimited
 mpirun: --mca orte_base_help_aggregate 0 -bind-to none
 collate_mem: 6GB
 qsub_flags: -lother=hyperthread
+mpi:
+    module: openmpi/1.8.2
