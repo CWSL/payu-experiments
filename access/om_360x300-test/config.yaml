@@ -28,7 +28,7 @@ submodels:
       ncpus: 54
       build:
           path_to_build_command: exp
-          command: './MOM_compile.csh --platform nci --type ACCESS-OM'
+          command: './MOM_compile.csh --platform nci --type ACCESS-OM --unit-testing'
           exec_path: exec/nci/ACCESS-OM/
 
     - name: ice
@@ -37,7 +37,8 @@ submodels:
       input: cice
       ncpus: 6
       build:
-          command: 'make access-om'
+          exec_path: build_access-om_360x300_6p
+          command: './bld/build.sh nci access-om 360x300 unit_testing'
 
 calendar:
     runtime:
