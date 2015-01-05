@@ -15,12 +15,6 @@ submodels:
       input: oasis_om_1440x1080
       ncpus: 0
 
-    - name: atmosphere
-      model: matm
-      exe: matm_nt62.exe
-      input: /short/public/access/input/core2_nyf_matm
-      ncpus: 1
-
     - name: ocean
       model: mom
       exe: fms_ACCESS-OM.x
@@ -38,6 +32,12 @@ submodels:
       build:
           command: './bld/build.sh nci access-om 1440x1080 unit_testing'
           exec_path: build_access-om_1440x1080_192p
+
+    - name: atmosphere
+      model: matm
+      exe: matm_nt62.exe
+      input: /short/public/access/input/core2_nyf_matm
+      ncpus: 1
 
 calendar:
     runtime:
