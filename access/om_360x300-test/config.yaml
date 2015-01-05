@@ -15,12 +15,6 @@ submodels:
       input: oasis_om
       ncpus: 0
 
-    - name: atmosphere
-      model: matm
-      exe: matm_nt62.exe
-      input: core2_nyf_matm
-      ncpus: 1
-
     - name: ocean
       model: mom
       exe: fms_ACCESS-OM.x
@@ -39,6 +33,13 @@ submodels:
       build:
           exec_path: build_access-om_360x300_6p
           command: './bld/build.sh nci access-om 360x300 unit_testing'
+
+    - name: atmosphere
+      model: matm
+      exe: matm_nt62.exe
+      input: core2_nyf_matm
+      ncpus: 1
+
 
 calendar:
     runtime:

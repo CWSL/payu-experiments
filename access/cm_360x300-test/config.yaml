@@ -10,6 +10,11 @@ shortpath: /short/v45
 # Model configuration
 model: access
 submodels:
+    - name: coupler
+      model: oasis
+      input: oasis_cm
+      ncpus: 0
+
     - name: atmosphere
       model: um
       exe: um7.3.exe
@@ -35,10 +40,6 @@ submodels:
           exec_path: build_access-cm_360x300_6p
           command: './bld/build.sh nci access-cm 360x300 unit_testing'
 
-    - name: coupler
-      model: oasis
-      input: oasis_cm
-      ncpus: 0
 
 calendar:
     runtime:
