@@ -17,7 +17,7 @@ submodels:
 
     - name: atmosphere
       model: um
-      exe: um7.3.exe
+      exe: um7.3.dbg.exe
       input: um
       ncpus: 32
 
