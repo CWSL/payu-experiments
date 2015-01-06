@@ -22,7 +22,7 @@ submodels:
       ncpus: 54
       build:
           path_to_build_command: exp
-          command: './MOM_compile.csh --platform nci --type ACCESS-OM --unit-testing'
+          command: './MOM_compile.csh --platform nci --type ACCESS-OM --unit_testing'
           exec_path: exec/nci/ACCESS-OM/
 
     - name: ice
@@ -39,7 +39,8 @@ submodels:
       exe: matm_nt62.exe
       input: core2_nyf_matm
       ncpus: 1
-
+      build:
+          command: './build/build.sh nci debug'
 
 calendar:
     runtime:

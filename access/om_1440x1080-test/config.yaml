@@ -38,6 +38,8 @@ submodels:
       exe: matm_nt62.exe
       input: /short/public/access/input/core2_nyf_matm
       ncpus: 1
+      build:
+          command: './build/build.sh nci debug'
 
 calendar:
     runtime:
