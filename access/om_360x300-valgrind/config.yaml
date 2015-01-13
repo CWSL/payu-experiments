@@ -1,8 +1,8 @@
 # PBS configuration
-queue: express
+queue: normal
 project: x77
-walltime: 00:05:00
-jobname: om_360x300-test
+walltime: 05:00:00
+jobname: om_360x300-tiny
 ncpus: 64
 
 shortpath: /short/v45
@@ -22,7 +22,7 @@ submodels:
       ncpus: 54
       build:
           path_to_build_command: exp
-          command: './MOM_compile.csh --platform nci --type ACCESS-OM --unit_testing'
+          command: './MOM_compile.csh --platform nci --type ACCESS-OM --debug'
           exec_path: exec/nci/ACCESS-OM/
 
     - name: ice
@@ -59,3 +59,4 @@ mpirun: --mca orte_base_help_aggregate 0
 qsub_flags: -lother=hyperthread
 collate_walltime: 0:05:00
 collate_queue: express
+valgrind: True

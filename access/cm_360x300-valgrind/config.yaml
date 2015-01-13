@@ -1,8 +1,8 @@
 # PBS configuration
-queue: express
-project: x77
-walltime: 00:05:00
-jobname: om_360x300-test
+queue: normal
+project: v45
+walltime: 05:00:00
+jobname: cm_360x300-test
 ncpus: 64
 
 shortpath: /short/v45
@@ -12,35 +12,33 @@ model: access
 submodels:
     - name: coupler
       model: oasis
-      input: oasis_om
+      input: oasis_cm
       ncpus: 0
+
+    - name: atmosphere
+      model: um
+      exe: um7.3.dbg.exe
+      input: um
+      ncpus: 32
 
     - name: ocean
       model: mom
-      exe: fms_ACCESS-OM.x
+      exe: fms_ACCESS-CM.x
       input: mom
-      ncpus: 54
+      ncpus: 16
       build:
           path_to_build_command: exp
-          command: './MOM_compile.csh --platform nci --type ACCESS-OM --unit_testing'
-          exec_path: exec/nci/ACCESS-OM/
+          command: './MOM_compile.csh --platform nci --type ACCESS-CM --debug'
+          exec_path: exec/nci/ACCESS-CM/
 
     - name: ice
       model: cice
-      exe: cice_access-om_360x300_6p.exe
+      exe: cice_access-cm_360x300_6p.exe
       input: cice
       ncpus: 6
       build:
-          exec_path: build_access-om_360x300_6p
-          command: './bld/build.sh nci access-om 360x300 unit_testing'
-
-    - name: atmosphere
-      model: matm
-      exe: matm_nt62.exe
-      input: core2_nyf_matm
-      ncpus: 1
-      build:
-          command: './build/build.sh nci debug'
+          exec_path: build_access-cm_360x300_6p
+          command: './bld/build.sh nci access-cm 360x300 unit_testing'
 
 calendar:
     runtime:
@@ -53,9 +51,11 @@ calendar:
         month: 1
         days: 1
 
+
 # Misc
 stacksize: unlimited
 mpirun: --mca orte_base_help_aggregate 0
 qsub_flags: -lother=hyperthread
 collate_walltime: 0:05:00
 collate_queue: express
+valgrind: True
