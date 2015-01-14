@@ -18,7 +18,7 @@ submodels:
     - name: ocean
       model: mom
       exe: fms_ACCESS-OM.x
-      exe_prefix: valgrind --main-stacksize=2000000000 --max-stackframe=2000000000 --error-limit=no --gen-suppressions=all --suppressions=/short/v45/nah599/more_home/access-tests/valgrind_suppressions.txt
+      #exe_prefix: valgrind --main-stacksize=2000000000 --max-stackframe=2000000000 --error-limit=no --gen-suppressions=all --suppressions=/short/v45/nah599/more_home/access-tests/valgrind_suppressions.txt
       input: mom
       ncpus: 54
       build:
@@ -29,7 +29,7 @@ submodels:
     - name: ice
       model: cice
       exe: cice_access-om_360x300_6p.exe
-      exe_prefix: valgrind --main-stacksize=2000000000 --max-stackframe=2000000000 --error-limit=no --gen-suppressions=all --suppressions=/short/v45/nah599/more_home/access-tests/valgrind_suppressions.txt
+      #exe_prefix: valgrind --main-stacksize=2000000000 --max-stackframe=2000000000 --error-limit=no --gen-suppressions=all --suppressions=/short/v45/nah599/more_home/access-tests/valgrind_suppressions.txt
       input: cice
       ncpus: 6
       build:
@@ -39,7 +39,7 @@ submodels:
     - name: atmosphere
       model: matm
       exe: matm_nt62.exe
-      exe_prefix: valgrind --main-stacksize=2000000000 --max-stackframe=2000000000 --error-limit=no --gen-suppressions=all --suppressions=/short/v45/nah599/more_home/access-tests/valgrind_suppressions.txt
+      #exe_prefix: valgrind --main-stacksize=2000000000 --max-stackframe=2000000000 --error-limit=no --gen-suppressions=all --suppressions=/short/v45/nah599/more_home/access-tests/valgrind_suppressions.txt
       input: core2_nyf_matm
       ncpus: 1
       build:
@@ -62,4 +62,3 @@ mpirun: --mca orte_base_help_aggregate 0
 qsub_flags: -lother=hyperthread
 collate_walltime: 0:05:00
 collate_queue: express
-valgrind: True
