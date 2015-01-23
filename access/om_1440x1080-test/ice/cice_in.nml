@@ -2,8 +2,8 @@
     days_per_year  = 365
   , year_init      = 1
   , istep0         = 0
-  , dt             = 900
-  , npt            = 2976
+  , dt             = 1200
+  , npt            = 2232
   , ndyn_dt        = 1
   , runtype        = 'initial'
   , ice_ic         = 'default'

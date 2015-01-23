@@ -6,8 +6,8 @@
     runtime0=63072000
     runtime=15897600
     dt_cpl_ai=21600
-    dt_cpl_io=900
-    dt_cice=900
+    dt_cpl_io=1200
+    dt_cice=1200
     pop_icediag=.true.
     ice_pressure_on=.true.
     ice_fwflux=.true.
