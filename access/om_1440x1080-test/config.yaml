@@ -21,7 +21,7 @@ submodels:
       input: mom_om_1440x1080
       ncpus: 960
       build:
-          command: './MOM_compile.csh --platform nci --type ACCESS-OM --unit_testing'
+          command: './MOM_compile.csh --platform nci --type ACCESS-OM --debug'
           exec_path: exec/nci/ACCESS-OM/
 
     - name: ice
@@ -30,7 +30,7 @@ submodels:
       input: cice_om_1440x1080
       ncpus: 192
       build:
-          command: './bld/build.sh nci access-om 1440x1080 unit_testing'
+          command: './bld/build.sh nci access-om 1440x1080 debug'
           exec_path: build_access-om_1440x1080_192p
 
     - name: atmosphere

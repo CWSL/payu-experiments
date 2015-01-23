@@ -28,7 +28,7 @@ submodels:
       ncpus: 960
       build:
           path_to_build_command: exp
-          command: './MOM_compile.csh --platform nci --type ACCESS-CM --unit_testing'
+          command: './MOM_compile.csh --platform nci --type ACCESS-CM --debug'
           exec_path: exec/nci/ACCESS-CM/
 
     - name: ice
@@ -38,7 +38,7 @@ submodels:
       ncpus: 192
       build:
           exec_path: build_access-cm_1440x1080_192p
-          command: './bld/build.sh nci access-cm 1440x1080 unit_testing'
+          command: './bld/build.sh nci access-cm 1440x1080 debug'
 
 calendar:
     runtime:
