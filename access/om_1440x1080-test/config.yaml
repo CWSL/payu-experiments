@@ -5,8 +5,6 @@ walltime: 1:00:00
 jobname: om_1440x1080-unit_test
 ncpus: 1168
 
-shortpath: /short/v45
-
 # Model configuration
 model: access
 submodels:
@@ -36,7 +34,7 @@ submodels:
     - name: atmosphere
       model: matm
       exe: matm_nt62.exe
-      input: /short/public/access/input/core2_nyf_matm
+      input: core2_nyf_matm
       ncpus: 1
       build:
           command: './build/build.sh nci debug'
