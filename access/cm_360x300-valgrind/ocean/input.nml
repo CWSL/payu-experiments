@@ -12,6 +12,12 @@
        clock_grain='LOOP'
 /
 
+ &xgrid_nml
+         make_exchange_reproduce=.false.
+	    interp_method = 'second_order'
+        nsubset = 16
+/
+
  &ocean_adv_vel_diag_nml
       diag_step=120
       verbose_cfl=.false.

@@ -612,8 +612,8 @@
  &xgrid_nml
          make_exchange_reproduce=.false.
 	    interp_method = 'second_order'
+        nsubset = 16
 /
-
 
  &mom_oasis3_interface_nml
       num_fields_in=15
@@ -651,4 +651,4 @@
             seconds = 0
             calendar = 'NOLEAP'
             dt_cpld  = 900
-/
+
