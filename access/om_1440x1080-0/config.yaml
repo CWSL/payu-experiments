@@ -19,7 +19,6 @@ submodels:
       input: mom_om_1440x1080
       ncpus: 960
       build:
-          repository: https://github.com/BreakawayLabs/mom.git
           command: './MOM_compile.csh --platform nci --type ACCESS-OM'
           exec_path: exec/nci/ACCESS-OM/
 

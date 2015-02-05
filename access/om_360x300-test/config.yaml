@@ -19,7 +19,8 @@ submodels:
       input: mom_om_360x300
       ncpus: 54
       build:
-          path_to_build_command: exp
+          repository: https://github.com/nicholash/mom.git
+          tag: 95-restart-segfault
           command: './MOM_compile.csh --platform nci --type ACCESS-OM --debug'
           exec_path: exec/nci/ACCESS-OM/
 

@@ -19,6 +19,8 @@ submodels:
       input: mom_om_1440x1080
       ncpus: 960
       build:
+          repository: https://github.com/nicholash/mom.git
+          tag: 95-restart-segfault
           command: './MOM_compile.csh --platform nci --type ACCESS-OM --debug'
           exec_path: exec/nci/ACCESS-OM/
 
