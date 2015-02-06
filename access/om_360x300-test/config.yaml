@@ -54,7 +54,7 @@ calendar:
 
 # Misc
 stacksize: unlimited
-mpirun: --mca orte_base_help_aggregate 0
+mpirun: --mca orte_base_help_aggregate 0 --mca memory_linux_ptmalloc2_enable 0
 qsub_flags: -lother=hyperthread
 collate_walltime: 0:05:00
 collate_queue: express

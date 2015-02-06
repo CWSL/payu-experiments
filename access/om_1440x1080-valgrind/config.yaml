@@ -16,7 +16,7 @@ submodels:
     - name: ocean
       model: mom
       exe_prefix: -x LD_PRELOAD=/home/599/nah599/usr/local/lib/valgrind/libmpiwrap-amd64-linux.so /home/599/nah599/usr/local/bin/valgrind --main-stacksize=2000000000 --max-stackframe=2000000000 --error-limit=no --gen-suppressions=all --suppressions=/home/599/nah599/more_home/access-tests/valgrind_suppressions.txt
-      exe: fms_ACCESS-OM.x
+      exe: fms_ACCESS-OM_valgrind.x
       input: mom_om_1440x1080
       ncpus: 960
       build:
@@ -26,7 +26,7 @@ submodels:
     - name: ice
       model: cice
       exe_prefix: -x LD_PRELOAD=/home/599/nah599/usr/local/lib/valgrind/libmpiwrap-amd64-linux.so /home/599/nah599/usr/local/bin/valgrind --main-stacksize=2000000000 --max-stackframe=2000000000 --error-limit=no --gen-suppressions=all --suppressions=/home/599/nah599/more_home/access-tests/valgrind_suppressions.txt
-      exe: cice_access-om_1440x1080_192p.exe
+      exe: cice_access-om_1440x1080_192p_valgrind.exe
       input: cice_om_1440x1080
       ncpus: 192
       build:
@@ -36,7 +36,7 @@ submodels:
     - name: atmosphere
       model: matm
       exe_prefix: -x LD_PRELOAD=/home/599/nah599/usr/local/lib/valgrind/libmpiwrap-amd64-linux.so /home/599/nah599/usr/local/bin/valgrind --main-stacksize=2000000000 --max-stackframe=2000000000 --error-limit=no --gen-suppressions=all --suppressions=/home/599/nah599/more_home/access-tests/valgrind_suppressions.txt
-      exe: matm_nt62.exe
+      exe: matm_nt62_valgrind.exe
       input: core2_nyf_matm
       ncpus: 1
       build:
