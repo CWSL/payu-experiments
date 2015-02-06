@@ -47,7 +47,8 @@ calendar:
     runtime:
         years: 0
         months: 0
-        days: 1
+        days: 0
+        seconds: 21600
 
     start:
         year: 1
