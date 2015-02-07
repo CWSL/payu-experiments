@@ -10,14 +10,14 @@ model: access
 submodels:
     - name: coupler
       model: oasis
-      input: oasis_om
+      input: oasis_om_360x300
       ncpus: 0
 
     - name: ocean
       model: mom
       exe: fms_ACCESS-OM.x
       exe_prefix: -x LD_PRELOAD=/home/599/nah599/usr/local/lib/valgrind/libmpiwrap-amd64-linux.so /home/599/nah599/usr/local/bin/valgrind --main-stacksize=2000000000 --max-stackframe=2000000000 --error-limit=no --gen-suppressions=all --suppressions=/home/599/nah599/more_home/access-tests/valgrind_suppressions.txt
-      input: mom
+      input: mom_om_360x300
       ncpus: 54
       build:
           path_to_build_command: exp
@@ -28,7 +28,7 @@ submodels:
       model: cice
       exe: cice_access-om_360x300_6p.exe
       exe_prefix: -x LD_PRELOAD=/home/599/nah599/usr/local/lib/valgrind/libmpiwrap-amd64-linux.so /home/599/nah599/usr/local/bin/valgrind --main-stacksize=2000000000 --max-stackframe=2000000000 --error-limit=no --gen-suppressions=all --suppressions=/home/599/nah599/more_home/access-tests/valgrind_suppressions.txt
-      input: cice
+      input: cice_om_360x300
       ncpus: 6
       build:
           exec_path: build_access-om_360x300_6p
