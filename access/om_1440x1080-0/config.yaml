@@ -17,7 +17,7 @@ submodels:
 
     - name: ocean
       model: mom
-      exe: fms_ACCESS-OM.x
+      exe: fms_ACCESS-OM_openmpi1.6.5.x
       input: /short/public/access/input/mom_om_1440x1080
       ncpus: 960
       build:
@@ -36,7 +36,7 @@ submodels:
 
     - name: atmosphere
       model: matm
-      exe: matm_nt62.exe
+      exe: matm_nt62_openmpi1.6.5.exe
       input: /short/public/access/input/core2_nyf_matm
       ncpus: 1
 
@@ -53,6 +53,6 @@ calendar:
 
 # Misc
 stacksize: unlimited
-mpirun: --mca orte_base_help_aggregate 0
+mpirun: --mca orte_base_help_aggregate 0 -mca memory_linux_ptmalloc2_enable 0
 collate_mem: 6GB
 qsub_flags: -lother=hyperthread

@@ -40,7 +40,7 @@
       zero_tendency=.false.
       barotropic_time_stepping_A=.true.
       barotropic_time_stepping_B=.false.
-      pred_corr_gamma=0.20
+      pred_corr_gamma=0.2
       smooth_eta_t_laplacian=.false.
       smooth_pbot_t_laplacian=.false.
       smooth_eta_t_biharmonic=.true.
@@ -52,7 +52,7 @@
       truncate_eta=.false.
       eta_max=8.0
       verbose_truncate=.true.
-      frac_crit_cell_height=0.20
+      frac_crit_cell_height=0.2
       diag_step=4320
 	  barotropic_halo = 10
       use_legacy_barotropic_halos=.false.
@@ -118,12 +118,12 @@
 /
 
  &ocean_density_nml
+      debug_this_module=.false.
       potrho_min=1028.0
       potrho_max=1038.0
       neutralrho_min=1028.0
       neutralrho_max=1038.0
       layer_nk=80
-      eos_linear=.false.
       eos_preteos10=.true. 
 /
 
@@ -327,17 +327,17 @@
  &ocean_sbc_nml
       use_waterflux=.true.
       land_model_heat_fluxes=.false.
-      temp_restore_tscale=-10.0
-      salt_restore_tscale=60.0
-      salt_restore_under_ice=.true.
+      temp_restore_tscale=-1.0
+      salt_restore_tscale=-1.0
+      salt_restore_under_ice=.false.
       salt_restore_as_salt_flux=.true.
       read_restore_mask=.false.
       restore_mask_gfdl=.false.
       max_ice_thickness=8.0
-      zero_net_water_restore=.true.
-      zero_net_water_coupler=.true.
-      zero_net_water_couple_restore=.true.
-      zero_net_salt_restore=.true.
+      zero_net_water_restore=.false.
+      zero_net_water_coupler=.false.
+      zero_net_water_couple_restore=.false.
+      zero_net_salt_restore=.false.
       avg_sfc_velocity=.true.
       avg_sfc_temp_salt_eta=.true.
       zero_water_fluxes=.false.
@@ -480,7 +480,7 @@
 
  &ocean_tracer_diag_nml
       tracer_conserve_days=30.0
-      diag_step=720
+      diag_step=4320
       do_bitwise_exact_sum=.false.
 /
 
@@ -612,28 +612,30 @@
 /
 
  &xgrid_nml
-         make_exchange_reproduce=.false.
+        make_exchange_reproduce=.false.
 	    interp_method = 'second_order'
         nsubset = 16
 /
 
 
  &mom_oasis3_interface_nml
-      num_fields_in=15
-      num_fields_out=7
-      fields_in= 'u_flux' ,'v_flux' ,'lprec','fprec','salt_flx','mh_flux','sw_flux','q_flux','t_flux','lw_flux','runof' ,'p' ,'aice', 'wfimelt', 'wfiform'
-      fields_out='t_surf','s_surf','u_surf','v_surf','dssldx','dssldy','frazil'
+      num_fields_in=17
+      num_fields_out=9
+      fields_in= 'u_flux' ,'v_flux' ,'lprec','fprec','salt_flx','mh_flux','sw_flux','q_flux','t_flux','lw_flux','runof' ,'p' ,'aice', 'wfimelt', 'wfiform','co2_io', 'wnd_io'
+      fields_out='t_surf','s_surf','u_surf','v_surf','dssldx','dssldy','frazil','co2_o','co2fx_o'
       send_before_ocean_update=.false.
       send_after_ocean_update=.true.
 /
 
  &auscom_ice_nml
     dt_cpl=1200
-    do_ice_once=.false.
     pop_icediag=.true.
-    kmxice=5 
+    do_ice_once=.false.
+    kmxice=1 
     fixmeltT=.false.
-    Tmelt=-.216
+    Tmelt=-1.0
+    limit_srfstress=.false.
+    Mstress=5.0
     use_ioaice=.true.
     aice_cutoff=0.15
     icemlt_factor=1.0
@@ -645,13 +647,13 @@
 /
 
 &ocean_solo_nml
-            years = 0
-            months = 6
+            years = 1
+            months = 0
             days   = 0
-            date_init = 117,01,01,0,0,0
+            date_init = 0001,01,01,0,0,0
             hours = 0
             minutes = 0
             seconds = 0
-            calendar = 'NOLEAP'
+            calendar = 'gregorian'
             dt_cpld  = 1200
 /

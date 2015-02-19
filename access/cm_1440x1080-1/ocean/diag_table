@@ -1,10 +1,10 @@
 MOM4p1_CORE_IAF_v20120531_0849_noRestore_runoff_fix
 1 1 1 0 0 0
 #output files
-"ocean",           12,  "months", 1, "days", "time",
+"ocean",           1,  "months", 1, "days", "time",
 "ocean_daily",     24,  "hours",  1, "days", "time",
 "ocean_grid",      -1,  "months", 1, "days", "time",
-"ocean_scalar",     1,  "months", 1, "days", "time",
+"ocean_scalar",     1,  "months", 1, "hours", "time",
 "ocean_model","geolon_t","geolon_t", "ocean_grid","all",.false.,"none",2
 "ocean_model","geolat_t","geolat_t", "ocean_grid","all",.false.,"none",2
 "ocean_model","geolon_c","geolon_c", "ocean_grid","all",.false.,"none",2
@@ -36,6 +36,8 @@ MOM4p1_CORE_IAF_v20120531_0849_noRestore_runoff_fix
 "ocean_model","salt_int_rhodz","salt_int_rhodz",          "ocean","all",.true.,"none",2
 "ocean_model","sea_level","sea_level",           "ocean","all",.true.,"none",2
 "ocean_model","sea_level_sq","sea_levelsq",      "ocean","all",.true.,"none",2
+"ocean_model","patm_t","patm_t",      "ocean","all",.true.,"none",2
+"ocean_model","patm_u","patm_u",      "ocean","all",.true.,"none",2
 # diagnostic fields
 # 3d fields
  "ocean_model","wt","wt",                            "ocean","all",.true.,"none",2
@@ -48,13 +50,6 @@ MOM4p1_CORE_IAF_v20120531_0849_noRestore_runoff_fix
 "ocean_model","hblt","hblt",                        "ocean","all",.true.,"none",2
 "ocean_model","mld","mld",                          "ocean","all",.true.,"none",2
 "ocean_model","mld_dtheta","mld_dtheta",            "ocean","all",.true.,"none",2
-#
-#"ocean_model","tau_x","tau_x"     , "ocean_daily","all",.false.,"none",2
-#"ocean_model","tau_y","tau_y"     , "ocean_daily","all",.false.,"none",2
-#"ocean_model","geolon_t","geolon_t", "ocean_daily","all",.false.,"none",2
-#"ocean_model","geolat_t","geolat_t", "ocean_daily","all",.false.,"none",2
-#"ocean_model","geolon_c","geolon_c", "ocean_daily","all",.false.,"none",2
-#"ocean_model","geolat_c","geolat_c", "ocean_daily","all",.false.,"none",2
 #
 # surface flux quantities
  "ocean_model","pme_river","pme_river",            "ocean","all",.true.,"none",2
@@ -72,12 +67,6 @@ MOM4p1_CORE_IAF_v20120531_0849_noRestore_runoff_fix
 # 3d fields
  "ocean_model","tx_trans","tx_trans",        "ocean","all",.true.,"none",2
  "ocean_model","ty_trans","ty_trans",        "ocean","all",.true.,"none",2
- "ocean_model","tx_trans_rho","tx_trans_rho",         "ocean","all",.true.,"none",2
- "ocean_model","ty_trans_rho","ty_trans_rho",         "ocean","all",.true.,"none",2
- "ocean_model","tx_trans_submeso","tx_trans_submeso", "ocean","all",.true.,"none",2
- "ocean_model","ty_trans_submeso","ty_trans_submeso", "ocean","all",.true.,"none",2
-
-
 #
 # 2d fields
   "ocean_model","salt_xflux_adv_int_z","salt_xflux_adv_int_z","ocean","all",.true.,"none",2
