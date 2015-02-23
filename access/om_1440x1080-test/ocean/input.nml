@@ -33,6 +33,7 @@
  &diag_manager_nml
       debug_diag_manager=.true.
       issue_oor_warnings=.true.
+      mix_snapshot_average_fields=.true.
 /
 
  &ocean_barotropic_nml
