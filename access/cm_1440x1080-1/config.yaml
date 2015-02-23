@@ -3,7 +3,7 @@ queue: normal
 project: x77
 walltime: 5:00:00
 jobname: cm_1440x1080-1
-ncpus: 1344
+ncpus: 1280
 
 shortpath: /short/v45
 
@@ -19,7 +19,7 @@ submodels:
       model: um
       exe: um7.3.exe
       input: um
-      ncpus: 192
+      ncpus: 96
 
     - name: ocean
       model: mom
@@ -43,8 +43,8 @@ submodels:
 calendar:
     runtime:
         years: 0
-        months: 12
-        days: 0 
+        months: 6
+        days: 0
 
     start:
         years: 1
