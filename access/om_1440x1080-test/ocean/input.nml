@@ -33,6 +33,7 @@
  &diag_manager_nml
       debug_diag_manager=.true.
       issue_oor_warnings=.true.
+      mix_snapshot_average_fields=.true.
 /
 
  &ocean_barotropic_nml
@@ -186,7 +187,7 @@
 /
 
  &ocean_model_nml
-      dt_ocean = 900
+      dt_ocean = 1200
       time_tendency='twolevel'
       vertical_coordinate='zstar'
       baroclinic_split = 1
@@ -627,7 +628,7 @@
 /
 
  &auscom_ice_nml
-    dt_cpl=900
+    dt_cpl=1200
     do_ice_once=.false.
     pop_icediag=.true.
     kmxice=5 
@@ -652,5 +653,5 @@
             minutes = 0
             seconds = 0
             calendar = 'NOLEAP'
-            dt_cpld  = 900
+            dt_cpld  = 1200
 /

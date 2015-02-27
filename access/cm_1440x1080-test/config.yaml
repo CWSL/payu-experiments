@@ -1,7 +1,7 @@
 # PBS configuration
 queue: normal
 project: v45
-walltime: 0:30:00
+walltime: 1:00:00
 jobname: cm_1440x1080-test
 ncpus: 1248
 
@@ -17,7 +17,7 @@ submodels:
 
     - name: atmosphere
       model: um
-      exe: um7.3.dbg.exe
+      exe: um7.3.exe
       input: um
       ncpus: 96
 
@@ -28,7 +28,7 @@ submodels:
       ncpus: 960
       build:
           path_to_build_command: exp
-          command: './MOM_compile.csh --platform nci --type ACCESS-CM --unit_testing'
+          command: './MOM_compile.csh --platform nci --type ACCESS-CM --debug'
           exec_path: exec/nci/ACCESS-CM/
 
     - name: ice
@@ -38,7 +38,7 @@ submodels:
       ncpus: 192
       build:
           exec_path: build_access-cm_1440x1080_192p
-          command: './bld/build.sh nci access-cm 1440x1080 unit_testing'
+          command: './bld/build.sh nci access-cm 1440x1080 debug'
 
 calendar:
     runtime:

@@ -2,42 +2,43 @@
 queue: normal
 project: x77
 walltime: 05:00:00
-jobname: om_360x300-valgrind
-ncpus: 64
+jobname: om_1440x1080-valgrind
+ncpus: 1168
 
 # Model configuration
 model: access
 submodels:
     - name: coupler
       model: oasis
-      input: oasis_om_360x300
+      input: oasis_om_1440x1080
       ncpus: 0
 
     - name: ocean
       model: mom
-      exe: fms_ACCESS-OM.x
       exe_prefix: -x LD_PRELOAD=/home/599/nah599/usr/local/lib/valgrind/libmpiwrap-amd64-linux.so /home/599/nah599/usr/local/bin/valgrind --main-stacksize=2000000000 --max-stackframe=2000000000 --error-limit=no --gen-suppressions=all --suppressions=/home/599/nah599/more_home/access-tests/valgrind_suppressions.txt
-      input: mom_om_360x300
-      ncpus: 54
+      exe: fms_ACCESS-OM_valgrind.x
+      input: mom_om_1440x1080
+      ncpus: 960
       build:
-          path_to_build_command: exp
+          repository: https://github.com/nicholash/mom.git
+          tag: 95-restart-segfault
           command: './MOM_compile.csh --platform nci --type ACCESS-OM --debug'
           exec_path: exec/nci/ACCESS-OM/
 
     - name: ice
       model: cice
-      exe: cice_access-om_360x300_6p.exe
       exe_prefix: -x LD_PRELOAD=/home/599/nah599/usr/local/lib/valgrind/libmpiwrap-amd64-linux.so /home/599/nah599/usr/local/bin/valgrind --main-stacksize=2000000000 --max-stackframe=2000000000 --error-limit=no --gen-suppressions=all --suppressions=/home/599/nah599/more_home/access-tests/valgrind_suppressions.txt
-      input: cice_om_360x300
-      ncpus: 6
+      exe: cice_access-om_1440x1080_192p_valgrind.exe
+      input: cice_om_1440x1080
+      ncpus: 192
       build:
-          exec_path: build_access-om_360x300_6p
-          command: './bld/build.sh nci access-om 360x300 unit_testing'
+          command: './bld/build.sh nci access-om 1440x1080 debug'
+          exec_path: build_access-om_1440x1080_192p
 
     - name: atmosphere
       model: matm
-      exe: matm_nt62.exe
       exe_prefix: -x LD_PRELOAD=/home/599/nah599/usr/local/lib/valgrind/libmpiwrap-amd64-linux.so /home/599/nah599/usr/local/bin/valgrind --main-stacksize=2000000000 --max-stackframe=2000000000 --error-limit=no --gen-suppressions=all --suppressions=/home/599/nah599/more_home/access-tests/valgrind_suppressions.txt
+      exe: matm_nt62_valgrind.exe
       input: core2_nyf_matm
       ncpus: 1
       build:
@@ -51,11 +52,12 @@ calendar:
         seconds: 21600
 
     start:
-        year: 1
-        month: 1
+        years: 1
+        months: 1
         days: 1
 
+# Misc
 stacksize: unlimited
-mpirun: --mca orte_base_help_aggregate 0 --mca btl self,tcp
-collate_walltime: 0:05:00
-collate_queue: express
+mpirun: --mca orte_base_help_aggregate 0
+collate_mem: 6GB
+qsub_flags: -lother=hyperthread

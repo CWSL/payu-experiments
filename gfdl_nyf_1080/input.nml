@@ -1,6 +1,6 @@
  &coupler_nml
-        months = 12,
-        days   = 0,
+        months = 0,
+        days   = 1,
         current_date = 1,1,1,0,0,0,
         calendar = 'noleap',
         dt_cpld = 1800,
@@ -33,7 +33,6 @@
 	max_num_axis_sets=40
 	max_files = 1000
 	issue_oor_warnings=.false.
-    mix_snapshot_average_fields=.true.
 /
 
  &flux_exchange_nml
@@ -507,7 +506,6 @@
       submeso_advect_limit=.true.
       smooth_advect_transport=.true.
       smooth_advect_transport_num=4
-      submeso_diag_advect_transport=.false.
       submeso_advect_upwind=.true.
 /
 

@@ -50,25 +50,25 @@ MOM4p1_CORE_IAF_v20120531_0849_noRestore_runoff_fix
 "ocean_model","hblt","hblt",                        "ocean","all",.true.,"none",2
 "ocean_model","mld","mld",                          "ocean","all",.true.,"none",2
 "ocean_model","mld_dtheta","mld_dtheta",            "ocean","all",.true.,"none",2
-#
-"ocean_model","tau_x","tau_x"     , "ocean_daily","all",.false.,"none",2
-"ocean_model","tau_y","tau_y"     , "ocean_daily","all",.false.,"none",2
-"ocean_model","geolon_t","geolon_t", "ocean_daily","all",.false.,"none",2
-"ocean_model","geolat_t","geolat_t", "ocean_daily","all",.false.,"none",2
-"ocean_model","geolon_c","geolon_c", "ocean_daily","all",.false.,"none",2
-"ocean_model","geolat_c","geolat_c", "ocean_daily","all",.false.,"none",2
-#
+
+# Incoming fields from coupler.
+"ocean_model","tau_x","tau_x", "ocean_daily","all",.true.,"none",2
+"ocean_model","tau_y","tau_y", "ocean_daily","all",.true.,"none",2
+"ocean_model","evap_heat","evap_heat", "ocean_daily","all",.true.,"none",2
+"ocean_model","sens_heat","sens_heat", "ocean_daily","all",.true.,"none",2
+"ocean_model","lw_heat","lw_heat", "ocean_daily","all",.true.,"none",2
+"ocean_model","runoff","runoff", "ocean_daily","all",.true.,"none",2
+"ocean_model","wfimelt","wfimelt", "ocean_daily","all",.false.,"none",2
+"ocean_model","wfiform","wfiform", "ocean_daily","all",.false.,"none",2
+
 # surface flux quantities
- "ocean_model","pme_river","pme_river",            "ocean","all",.true.,"none",2
- "ocean_model","river","river",        "ocean","all",.true.,"none",2
- "ocean_model","ice_calving","ice_calving",        "ocean","all",.true.,"none",2
- "ocean_model","sfc_hflux_coupler","sfc_hflux_coupler" ,"ocean","all",.true.,"none",2
- "ocean_model","net_sfc_heating","net_sfc_heating"     ,"ocean","all",.true.,"none",2
- "ocean_model","tau_x","tau_x"                         ,"ocean","all",.true.,"none",2
- "ocean_model","tau_y","tau_y"                         ,"ocean","all",.true.,"none",2
- "ocean_model","salt_flux_coupler","salt_flux_coupler" ,"ocean","all",.true.,"none",2
- "ocean_model","frazil_2d","frazil_2d" ,"ocean","all",.true.,"none",2
- "ocean_model","sfc_salt_flux_restore","sfc_salt_flux_restore" ,"ocean","all",.true.,"none",2
+ "ocean_model","pme_river","pme_river", "ocean_daily","all",.true.,"none",2
+ "ocean_model","river","river", "ocean","all",.true.,"none",2
+ "ocean_model","ice_calving","ice_calving",        "ocean_daily","all",.true.,"none",2
+ "ocean_model","sfc_hflux_coupler","sfc_hflux_coupler" ,"ocean_daily","all",.true.,"none",2
+ "ocean_model","net_sfc_heating","net_sfc_heating"     ,"ocean_daily","all",.true.,"none",2
+ "ocean_model","frazil_2d","frazil_2d" ,"ocean_daily","all",.true.,"none",2
+ "ocean_model","sfc_salt_flux_restore","sfc_salt_flux_restore" ,"ocean_daily","all",.true.,"none",2
 #
 # volume transport
 # 3d fields

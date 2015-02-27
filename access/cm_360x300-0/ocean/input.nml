@@ -631,9 +631,9 @@
  dt_cpl=1800
  pop_icediag=.true.
  do_ice_once=.false.
- kmxice=1
+ kmxice=5
  fixmeltT=.false.
- Tmelt=-1.0
+ Tmelt=-0.216
  limit_srfstress=.false.
  Mstress=5.0
  use_ioaice=.true.

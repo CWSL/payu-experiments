@@ -18,14 +18,14 @@ submodels:
     - name: atmosphere
       model: um
       exe: um7.3.dbg.exe
-      exe_prefix: valgrind --main-stacksize=2000000000 --max-stackframe=2000000000 --error-limit=no --gen-suppressions=all --suppressions=/short/v45/nah599/more_home/access-tests/valgrind_suppressions.txt
+      exe_prefix: -x LD_PRELOAD=/home/599/nah599/usr/local/lib/valgrind/libmpiwrap-amd64-linux.so /home/599/nah599/usr/local/bin/valgrind --main-stacksize=2000000000 --max-stackframe=2000000000 --error-limit=no --gen-suppressions=all --suppressions=/home/599/nah599/more_home/access-tests/valgrind_suppressions.txt
       input: um
       ncpus: 32
 
     - name: ocean
       model: mom
       exe: fms_ACCESS-CM.x
-      exe_prefix: valgrind --main-stacksize=2000000000 --max-stackframe=2000000000 --error-limit=no --gen-suppressions=all --suppressions=/short/v45/nah599/more_home/access-tests/valgrind_suppressions.txt
+      exe_prefix: -x LD_PRELOAD=/home/599/nah599/usr/local/lib/valgrind/libmpiwrap-amd64-linux.so /home/599/nah599/usr/local/bin/valgrind --main-stacksize=2000000000 --max-stackframe=2000000000 --error-limit=no --gen-suppressions=all --suppressions=/home/599/nah599/more_home/access-tests/valgrind_suppressions.txt
       input: mom
       ncpus: 16
       build:
@@ -36,7 +36,7 @@ submodels:
     - name: ice
       model: cice
       exe: cice_access-cm_360x300_6p.exe
-      exe_prefix: valgrind --main-stacksize=2000000000 --max-stackframe=2000000000 --error-limit=no --gen-suppressions=all --suppressions=/short/v45/nah599/more_home/access-tests/valgrind_suppressions.txt
+      exe_prefix: -x LD_PRELOAD=/home/599/nah599/usr/local/lib/valgrind/libmpiwrap-amd64-linux.so /home/599/nah599/usr/local/bin/valgrind --main-stacksize=2000000000 --max-stackframe=2000000000 --error-limit=no --gen-suppressions=all --suppressions=/home/599/nah599/more_home/access-tests/valgrind_suppressions.txt
       input: cice
       ncpus: 6
       build:
@@ -56,7 +56,7 @@ calendar:
 
 # Misc
 stacksize: unlimited
-mpirun: --mca orte_base_help_aggregate 0
+mpirun: --mca orte_base_help_aggregate 0 --mca btl self,tcp
 qsub_flags: -lother=hyperthread
 collate_walltime: 0:05:00
 collate_queue: express

@@ -1,11 +1,9 @@
 # PBS configuration
 queue: normal
 project: v45
-walltime: 0:30:00
+walltime: 1:00:00
 jobname: om_1440x1080-unit_test
 ncpus: 1168
-
-shortpath: /short/v45
 
 # Model configuration
 model: access
@@ -21,7 +19,9 @@ submodels:
       input: mom_om_1440x1080
       ncpus: 960
       build:
-          command: './MOM_compile.csh --platform nci --type ACCESS-OM --unit_testing'
+          repository: https://github.com/nicholash/mom.git
+          tag: 95-restart-segfault
+          command: './MOM_compile.csh --platform nci --type ACCESS-OM --debug'
           exec_path: exec/nci/ACCESS-OM/
 
     - name: ice
@@ -30,13 +30,13 @@ submodels:
       input: cice_om_1440x1080
       ncpus: 192
       build:
-          command: './bld/build.sh nci access-om 1440x1080 unit_testing'
+          command: './bld/build.sh nci access-om 1440x1080 debug'
           exec_path: build_access-om_1440x1080_192p
 
     - name: atmosphere
       model: matm
       exe: matm_nt62.exe
-      input: /short/public/access/input/core2_nyf_matm
+      input: core2_nyf_matm
       ncpus: 1
       build:
           command: './build/build.sh nci debug'
@@ -54,6 +54,6 @@ calendar:
 
 # Misc
 stacksize: unlimited
-mpirun: --mca orte_base_help_aggregate 0
+mpirun: --mca orte_base_help_aggregate 0 --mca memory_linux_ptmalloc2_enable 0
 collate_mem: 6GB
 qsub_flags: -lother=hyperthread
