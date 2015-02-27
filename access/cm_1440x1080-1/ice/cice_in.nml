@@ -2,8 +2,8 @@
     days_per_year  = 365
   , year_init      = 0001
   , istep0         = 0
-  , dt             = 450
-  , npt            = 70080
+  , dt             = 1200
+  , npt            = 26280
   , ndyn_dt        = 1
   , runtype        = 'initial'
   , ice_ic         = 'default'
@@ -11,8 +11,8 @@
   , restart_dir    = './RESTART/'
   , restart_file   = 'iced'
   , pointer_file   = './RESTART/ice.restart_file'
-  , dumpfreq       = 'm'
-  , dumpfreq_n     = 6
+  , dumpfreq       = 'y'
+  , dumpfreq_n     = 1
   , diagfreq       = 960
   , diag_type      = 'file'
   , diag_file      = 'ice_diag.d'

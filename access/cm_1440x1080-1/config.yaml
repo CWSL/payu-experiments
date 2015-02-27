@@ -1,6 +1,6 @@
 # PBS configuration
 queue: normal
-project: x77
+project: v45
 walltime: 5:00:00
 jobname: cm_1440x1080-1
 ncpus: 1280
@@ -43,7 +43,7 @@ submodels:
 calendar:
     runtime:
         years: 0
-        months: 6
+        months: 12
         days: 0
 
     start:
