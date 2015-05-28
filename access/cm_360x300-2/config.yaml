@@ -2,8 +2,8 @@
 queue: normal
 project: v45
 walltime: 5:00:00
-jobname: cm_360x300-1
-ncpus: 144
+jobname: cm_360x300-2
+ncpus: 208
 
 shortpath: /short/v45
 
@@ -24,8 +24,8 @@ submodels:
     - name: ocean
       model: mom
       exe: fms_ACCESS-CM.x
-      input: mom_360x300-2
-      ncpus: 40
+      input: mom_cm_360x300-2
+      ncpus: 96
       build:
           path_to_build_command: exp
           command: './MOM_compile.csh --platform nci --type ACCESS-CM'

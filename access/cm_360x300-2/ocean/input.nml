@@ -20,7 +20,7 @@
 /
 
  &ocean_adv_vel_diag_nml
-      diag_step=120
+      diag_step=4320
       verbose_cfl=.false.
       max_cfl_value=100.0
       large_cfl_value=10.0
@@ -52,7 +52,7 @@
       eta_max=8.0
       verbose_truncate=.true.
       frac_crit_cell_height=0.20
-      diag_step=120
+      diag_step=4320
 /
 
  &ocean_bbc_nml
@@ -204,10 +204,10 @@
 /
 
  &ocean_model_nml
-      layout = 8,5
+      layout = 12,8
       time_tendency='twolevel'
       vertical_coordinate='zstar'
-      dt_ocean = 900
+      dt_ocean = 450
       baroclinic_split = 1
       surface_height_split = 1
       barotropic_split = 80
@@ -423,7 +423,7 @@
             minutes = 0
             seconds = 0
             calendar = 'gregorian'
-            dt_cpld  = 900
+            dt_cpld  = 450
 /
 
  &ocean_sponges_tracer_nml
@@ -501,7 +501,7 @@
 
  &ocean_tracer_diag_nml
       tracer_conserve_days=1.0
-      diag_step=120
+      diag_step=4320
       do_bitwise_exact_sum=.false.
 /
 
@@ -523,8 +523,8 @@
 
  &ocean_velocity_diag_nml
       debug_this_module=.false.
-      diag_step=120
-      energy_diag_step=120
+      diag_step=4320
+      energy_diag_step=4320
       max_cfl_value=100.0
       large_cfl_value=10.0
 /
@@ -628,7 +628,7 @@
       send_after_ocean_update=.true.
 /
 &auscom_ice_nml
- dt_cpl=900
+ dt_cpl=450
  pop_icediag=.true.
  do_ice_once=.false.
  kmxice=5

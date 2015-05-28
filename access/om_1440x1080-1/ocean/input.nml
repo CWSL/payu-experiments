@@ -186,7 +186,7 @@
 /
 
  &ocean_model_nml
-      dt_ocean = 1200
+      dt_ocean = 1800
       time_tendency='twolevel'
       vertical_coordinate='zstar'
       baroclinic_split = 1
@@ -628,7 +628,7 @@
 /
 
  &auscom_ice_nml
-    dt_cpl=1200
+    dt_cpl=1800
     do_ice_once=.false.
     pop_icediag=.true.
     kmxice=5 
@@ -637,10 +637,10 @@
     use_ioaice=.true.
     aice_cutoff=0.15
     icemlt_factor=1.0
-    frazil_factor=1.0 
+    frazil_factor=1.0
     iceform_adj_salt=.false.
     sign_stflx=1.0
-    chk_i2o_fields=.false.
+    chk_i2o_fields=.true.
     chk_o2i_fields=.false.
 /
 
@@ -653,5 +653,5 @@
             minutes = 0
             seconds = 0
             calendar = 'NOLEAP'
-            dt_cpld  = 1200
+            dt_cpld  = 1800
 /
